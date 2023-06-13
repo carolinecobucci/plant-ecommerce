@@ -1,0 +1,26 @@
+.container{
+    width: 100%;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    background-color: #F0F1EE;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.firstH1 h1{
+    color: #354733
+}
+.firstH1 span{
+    color: #8A9B6E
+}
+
+.secondH1 h1{
+    color: #8A9B6E
+}
+.secondH1 span{
+    color: #354733
+}

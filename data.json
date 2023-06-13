@@ -1,0 +1,69 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "plants": [
+    {
+      "id": 1,
+      "name": "Echinocereus Cactus",
+      "subtitle": "A Majestic Addition to Your Plant Collection",
+      "label": ["indoor", "cactus"],
+      "price": "$139.99",
+      "isInSale": true,
+      "discountPercentage": 20,
+      "features": "Species: Echinocereus spp. Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height. Blooming Season: Typically spring or summer, with flowers lasting several days to weeks. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
+      "description": "Ladyfinger cactus (*Echinocereus pentalophus*) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
+      "imgUrl": "./assets/plant-slide.png"
+    },
+    {
+      "id": 2,
+      "name": "Monstera Deliciosa",
+      "subtitle": "Enhance Your Indoor Greenery with the Majestic Monstera",
+      "label": ["indoor", "outdoor", "monstera"],
+      "price": "$159.99",
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": "Species: Monstera deliciosa. Mature Size: Varies by species, typically ranging from 4 to 12 feet (1.2-3.6 meters) in height. Blooming Season: Does not typically bloom when grown indoors. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Monstera deliciosa plants are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition.",
+      "description": "Monstera deliciosa, also known as Swiss Cheese Plant or Split-leaf Philodendron, is a popular indoor plant. It thrives in bright indirect sunlight and requires moderate watering. Its large leaves have unique perforations, giving it a distinctive appearance. Monstera deliciosa is relatively easy to care for but can grow quite large, so it's important to provide adequate space for its growth. It does not typically produce flowers when grown indoors.",
+      "imgUrl": "./assets/plant-slide.png"
+    },
+    {
+      "id": 3,
+      "name": "Orchidae",
+      "subtitle": "Add Elegance to Your Space with Exquisite Orchids",
+      "label": ["indoor", "outdoor", "orchid", "high-quality"],
+      "price": "$109.99",
+      "isInSale": true,
+      "discountPercentage": 25,
+      "features": "Species: Orchidaceae. Mature Size: Varies by species, typically ranging from a few inches to several feet in height. Blooming Season: Varies depending on the orchid species, with some blooming once a year and others blooming multiple times. Pot Size: Available in various pot sizes to accommodate different orchid species and growth stages. Shipping: Our orchids are carefully packaged and shipped to ensure they arrive in excellent condition.",
+      "description": "Orchids, belonging to the Orchidaceae family, are a magnificent addition to any plant collection. These elegant plants come in a wide array of species, showcasing stunning flowers and intricate designs. Orchids can be grown both indoors and outdoors, offering flexibility in their placement. They require specific care tailored to each species, including the right balance of light, temperature, and humidity. With their enchanting blooms, orchids bring a touch of sophistication and beauty to any space. Although they demand some attention, the reward of witnessing their breathtaking flowers is truly worth it.",
+      "imgUrl": "./assets/plant-slide.png"
+    },
+    {
+      "id": 4,
+      "name": "Sansevieria trifasciata",
+      "subtitle": "Bring Natural Beauty and Air Purification with the Stunning Snake PLant",
+      "label": ["indoor", "ornamental", "low-maintenance"],
+      "price": "$49.99",
+      "isInSale": true,
+      "discountPercentage": 10,
+      "features": "Species: Sansevieria trifasciata. Mature Size: Varies by variety, typically ranging from 1 to 3 feet (30-90 cm) in height. Blooming Season: Occasionally produces small, fragrant white flowers. Pot Size: Available in various pot sizes to suit your preference and needs. Shipping: Our Espada-de-São-Jorge plants are carefully packaged and shipped to ensure they arrive in excellent condition.",
+      "description": "Sansevieria trifasciata, commonly known as Espada-de-São-Jorge or Snake Plant, is a stunning ornamental plant that brings both natural beauty and air purification qualities to any indoor space. With its upright, sword-shaped leaves showcasing variegated patterns, this plant adds an elegant touch to your home or office decor. Espada-de-São-Jorge is a low-maintenance plant, tolerant of different light conditions and requiring minimal watering. It is also known for its air-purifying abilities, helping to improve the air quality by filtering out toxins. Occasionally, it produces small, fragrant white flowers, adding an extra touch of charm to its overall appeal.",
+      "imgUrl": "./assets/plant-slide.png"
+    }
+  ]
+}
