@@ -1,10 +1,10 @@
 import './App.css';
-import Product from './components/product-page/Product';
+import SelectedPlant from './components/product-page/SelectedPlant';
 
 function App() {
   return (
     <>
-      <Product />
+      <SelectedPlant />
     </>
   );
 }
