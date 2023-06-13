@@ -1,4 +1,4 @@
-.section-container {
+.section_container {
   width: 85%;
   margin: 0 auto;
   background: #fcfcfc;
@@ -36,11 +36,11 @@ p {
   line-height: 174.19%;
 }
 
-.sub-title {
+.sub_title {
   width: 83%;
 }
 
-.plant-needs-container {
+.plant_needs_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -48,11 +48,11 @@ p {
   margin-bottom: 6rem;
 }
 
-.plant-needs img {
+.plant_needs img {
   width: 3rem;
 }
 
-.plant-needs {
+.plant_needs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -70,7 +70,7 @@ h3 {
   color: #1e1e24;
 }
 
-.plant-photos {
+.plant_photos {
   display: flex;
   flex-direction: row;
   gap: 1rem;
@@ -78,22 +78,22 @@ h3 {
   justify-content: center;
 }
 
-.plant-photos img {
+.plant_photos img {
   width: 19rem;
 }
 
-.plant-photos-container {
+.plant_photos_container {
   width: 23rem;
 }
 
-.see-more-photos {
+.see_more_photos {
   display: flex;
   flex-direction: column;
   gap: 1rem;
   width: 19rem;
 }
 
-.see-more-photos p {
+.see_more_photos p {
   text-align: left;
   font-size: 0.8rem;
 }

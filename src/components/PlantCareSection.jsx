@@ -1,20 +1,20 @@
-import "./PlantCareSection.css";
+import styles from "./PlantCareSection.module.css";
 
 const PlantCareSection = () => {
   return (
-    <div className="section-container">
-      <div className="title">
+    <div className={styles.section_container}>
+      <div className={styles.title}>
         <h1>
           Steps To Take Care Of Your <span>Plants</span>
         </h1>
-        <p className="sub-title">
+        <p className={styles.sub_title}>
           By following these three steps - proper watering, appropriate sunlight, and providing
           essential nutrients - you&apos;ll be well on your way to maintaining healthy and thriving
           plants.
         </p>
       </div>
-      <div className="plant-needs-container">
-        <div className="plant-needs">
+      <div className={styles.plant_needs_container}>
+        <div className={styles.plant_needs}>
           <img src="/src/assets/water-icon.svg" alt="water icon" />
           <h3>Watering</h3>
           <p>
@@ -22,7 +22,7 @@ const PlantCareSection = () => {
             as it can lead to root dehydration.
           </p>
         </div>
-        <div className="plant-needs">
+        <div className={styles.plant_needs}>
           <img src="/src/assets/sun-icon.svg" alt="sun icon" />
           <h3>Sunlight</h3>
           <p>
@@ -30,7 +30,7 @@ const PlantCareSection = () => {
             the appropriate amount of light for their specific needs
           </p>
         </div>
-        <div className="plant-needs">
+        <div className={styles.plant_needs}>
           <img src="/src/assets/shop-icon.svg" alt="nutrients and fertilizing icon" />
           <h3>Nutrients and Fertilizing</h3>
           <p>
@@ -39,14 +39,14 @@ const PlantCareSection = () => {
           </p>
         </div>
       </div>
-      <div className="plant-photos">
-        <div className="plant-photos-container">
+      <div className={styles.plant_photos}>
+        <div className={styles.plant_photos_container}>
           <img src="/src/assets/care-plant1.png" alt="plant photo" />
         </div>
-        <div className="plant-photos-container">
+        <div className={styles.plant_photos_container}>
           <img src="/src/assets/care-plant2.png" alt="plant photo" />
         </div>
-        <div className="see-more-photos">
+        <div className={styles.see_more_photos}>
           <img src="/src/assets/care-plant3.png" alt="plant photo" />
           <p>
             Our website offers a wide array of stunning plants, ranging from vibrant flowers to lush
