@@ -1,0 +1,32 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FCFCFC;
+    padding: .9em;
+}
+
+.list{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.item{
+    margin-right:3em;
+    align-items: center;
+}
+
+.item a{
+    color:rgba(53, 71, 51, 1);
+    text-decoration: none;
+}
+
+.item a:hover{
+    color:#3e5e45;
+}
+
+.login {
+    margin-top: 1em;
+    margin-right:3em;
+    align-items: center;
+}
