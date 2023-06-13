@@ -1,10 +1,11 @@
-import "./App.css";
+import './App.css';
+import Product from './components/product-page/Product';
 
 function App() {
   return (
-    <div>
-      <p>Challenge 2</p>
-    </div>
+    <>
+      <Product />
+    </>
   );
 }
 
