@@ -1,9 +1,9 @@
 import "./App.css";
-import PlantCard from './components/PlantCard'
+import LuksPart from './components/LuksPart';
 
 function App() {
   return <div>
-    <PlantCard/>
+    <LuksPart/>
   </div>;
 }
 

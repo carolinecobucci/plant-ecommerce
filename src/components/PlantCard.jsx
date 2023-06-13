@@ -1,5 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import classes from './PlantCard.module.css';
+import foto from '../assets/plant-slide.png'
 
 const PlantCard = () => {
     const [details, setDetails] = useState([])
@@ -15,10 +16,10 @@ const PlantCard = () => {
             <div className={classes.container}>
             {details.length > 0 ? (
                 <Fragment>
-                    <img src={details[1].imgUrl} alt="Imagem da planta"/>
-                    <p>{details[0].name}</p>
-                    <p>{details[0].price}</p>
-                    <p>{details[0].label[0]}</p>
+                    <img src={foto} alt="Imagem da planta"/>
+                    <p className={classes.name}>{details[0].name}</p>
+                    <p className={classes.price}>{details[0].price}</p>
+                    <p className={classes.label}>{details[0].label[0]}</p>
                 </Fragment>
             ) : (
                 <p>Loading...</p>

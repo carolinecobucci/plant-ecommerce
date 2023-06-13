@@ -12,6 +12,7 @@
 }
 
 .firstH1 h1{
+    margin-top: 1.5rem;
     color: #354733
 }
 .firstH1 span{
@@ -19,6 +20,7 @@
 }
 
 .secondH1 h1{
+    margin-top: 7rem;
     color: #8A9B6E
 }
 .secondH1 span{

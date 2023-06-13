@@ -7,6 +7,7 @@ import plantSlide1 from '../assets/plant-slide.png';
 import plantSlide2 from '../assets/plant-slide-2.png';
 import plantSlide3 from '../assets/plant-slide-3.png';
 import plantSlide4 from '../assets/plant-slide-4.png';
+import PlantCard from './PlantCard';
 
 const plantImages = [plantSlide1, plantSlide2, plantSlide3, plantSlide4]
 
@@ -30,7 +31,7 @@ const PlantCarousel = () => {
                     >
                     {plantImages.map(plantImg => (
                         <motion.div className={classes.item} key={plantImg}>
-                            <img src={plantImg} alt="Imagem da planta"/>
+                            <PlantCard/>
                         </motion.div>
                     ))}
                 </motion.div>
