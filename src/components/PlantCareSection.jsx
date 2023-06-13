@@ -2,15 +2,17 @@ import "./PlantCareSection.css";
 
 const PlantCareSection = () => {
   return (
-    <div>
-      <h1>
-        Steps To Take Care Of Your <span>Plants</span>
-      </h1>
-      <p>
-        By following these three steps - proper watering, appropriate sunlight, and providing
-        essential nutrients - you&apos;ll be well on your way to maintaining healthy and thriving
-        plants.
-      </p>
+    <div className="section-container">
+      <div className="title">
+        <h1>
+          Steps To Take Care Of Your <span>Plants</span>
+        </h1>
+        <p className="sub-title">
+          By following these three steps - proper watering, appropriate sunlight, and providing
+          essential nutrients - you&apos;ll be well on your way to maintaining healthy and thriving
+          plants.
+        </p>
+      </div>
       <div className="plant-needs-container">
         <div className="plant-needs">
           <img src="/src/assets/water-icon.svg" alt="water icon" />
@@ -38,8 +40,12 @@ const PlantCareSection = () => {
         </div>
       </div>
       <div className="plant-photos">
-        <img src="/src/assets/care-plant1.png" alt="plant photo" />
-        <img src="/src/assets/care-plant2.png" alt="plant photo" />
+        <div className="plant-photos-container">
+          <img src="/src/assets/care-plant1.png" alt="plant photo" />
+        </div>
+        <div className="plant-photos-container">
+          <img src="/src/assets/care-plant2.png" alt="plant photo" />
+        </div>
         <div className="see-more-photos">
           <img src="/src/assets/care-plant3.png" alt="plant photo" />
           <p>
@@ -53,7 +59,9 @@ const PlantCareSection = () => {
             green journey, our goal is to inspire and support you every step of the way. Get ready
             to explore our virtual garden and discover the joys of gardening with us!
           </p>
-          <button>See more photos</button>
+          <button>
+            <a href="#">See more photos</a>
+          </button>
         </div>
       </div>
     </div>

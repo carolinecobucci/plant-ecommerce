@@ -1,0 +1,113 @@
+.section-container {
+  width: 85%;
+  margin: 0 auto;
+  background: #fcfcfc;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding-top: 6.25rem;
+  margin-inline: 6.25rem;
+  margin-bottom: 4rem;
+}
+.title h1 {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #354733;
+}
+
+.title h1 span {
+  color: #8a9b6e;
+}
+
+p {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  color: #afb2aa;
+  text-align: center;
+  line-height: 174.19%;
+}
+
+.sub-title {
+  width: 83%;
+}
+
+.plant-needs-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5rem;
+  margin-bottom: 6rem;
+}
+
+.plant-needs img {
+  width: 3rem;
+}
+
+.plant-needs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  width: 19rem;
+}
+
+h3 {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1e1e24;
+}
+
+.plant-photos {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding-bottom: 7rem;
+  justify-content: center;
+}
+
+.plant-photos img {
+  width: 19rem;
+}
+
+.plant-photos-container {
+  width: 23rem;
+}
+
+.see-more-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 19rem;
+}
+
+.see-more-photos p {
+  text-align: left;
+  font-size: 0.8rem;
+}
+
+button {
+  font-family: "Raleway";
+  font-weight: 400;
+  width: 10rem;
+  height: 3rem;
+  background: #354733;
+  border: none;
+}
+
+button a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
