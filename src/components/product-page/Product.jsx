@@ -1,6 +1,14 @@
 import './Product.css';
 
-const Product = ({ title, subtitle, labels, price, features, description }) => {
+const Product = ({
+  id,
+  title,
+  subtitle,
+  labels,
+  price,
+  features,
+  description,
+}) => {
   return (
     <div className="product-container">
       <img src="/src/assets/Photo.svg" alt="" />
@@ -10,7 +18,9 @@ const Product = ({ title, subtitle, labels, price, features, description }) => {
         <h2 className="main-subtitle">{subtitle}</h2>
         <ul className="labels-container">
           {labels.map((label) => (
-            <li className="label">{label}</li>
+            <li className="label" key={id}>
+              {label}
+            </li>
           ))}
         </ul>
         <p className="price">${price}</p>
@@ -18,7 +28,9 @@ const Product = ({ title, subtitle, labels, price, features, description }) => {
         <h3 className="subtitles">Features</h3>
         <ul className="features">
           {features.map((feature) => (
-            <li className="features">{feature}</li>
+            <li className="features" key={id}>
+              {feature}
+            </li>
           ))}
         </ul>
         <h3 className="subtitles">Description</h3>
