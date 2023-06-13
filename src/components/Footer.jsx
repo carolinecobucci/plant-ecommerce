@@ -1,6 +1,7 @@
 import styles from "./Footer.module.css";
 
 import logo from "../assets/logo-icon.svg";
+
 const Footer = () => {
   return (
     <footer className={styles.footer}>
@@ -12,41 +13,45 @@ const Footer = () => {
         </div>
         <nav className={styles.links}>
           <div className={styles.div3}>
-          <p>Links</p>
+            <ul className={styles.list}>
+              <li className={styles.item1}>Links</li>
+            </ul>
             <ul className={styles.list}>
               <li className={styles.item}>
-                <a>About Us</a>
+                <a href="#">About Us</a>
               </li>
               <li className={styles.item}>
-                <a>Products</a>
+                <a href="#">Products</a>
               </li>
               <li className={styles.item}>
-                <a>Blogs</a>
+                <a href="#">Blogs</a>
               </li>
             </ul>
           </div>
           <div className={styles.div4}>
-            <p className={styles.item}>Community</p>
+            <ul className={styles.list}>
+              <li className={styles.item2}>Community</li>
+            </ul>
             <ul className={styles.list}>
               <li className={styles.item}>
-                <a>About Us</a>
+                <a href="#">About Us</a>
               </li>
               <li className={styles.item}>
-                <a>Products</a>
+                <a href="#">Products</a>
               </li>
               <li className={styles.item}>
-                <a>Blogs</a>
+                <a href="#">Blogs</a>
               </li>
             </ul>
           </div>
         </nav>
       </div>
 
-      <hr />
+      <hr/>
 
-      <div className={styles.rodape}>
+      <div className={styles.div5}>
         <img src={logo}></img>
-        <p>Compassinhos &reg; All rights reserved</p>
+        <p>Compassinhos &reg; All Rights Reserved</p>
       </div>
     </footer>
   );

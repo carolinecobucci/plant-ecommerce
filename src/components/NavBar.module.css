@@ -3,17 +3,22 @@
     justify-content: space-between;
     background-color: #FCFCFC;
     padding: .9em;
+    margin-left: 5em;
+    flex-wrap: wrap;
+    
 }
 
 .list{
     display: flex;
     list-style: none;
     align-items: center;
+    font-family:'Raleway';
 }
 
 .item{
     margin-right:3em;
     align-items: center;
+    color:rgba(53, 71, 51, 1);
 }
 
 .item a{
@@ -27,6 +32,7 @@
 
 .login {
     margin-top: 1em;
-    margin-right:3em;
+    margin-right:5em;
     align-items: center;
+    font-family:'Raleway';
 }
