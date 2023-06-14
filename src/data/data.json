@@ -1,0 +1,76 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Echinocereus Cactus",
+      "subtitle": "A Majestic Addition to Your Plant Collection",
+      "label": ["indoor", "cactus"],
+      "price": "$139.99",
+      "isInSale": true,
+      "discountPercentage": 20,
+      "features": [
+        "Species: Echinocereus spp.",
+        "Mature Size: Varies by species, typically ranging from 4 to 12 inches (10-30 cm) in height.",
+        "Blooming Season: Typically spring or summer.",
+        "Pot Size: Available in various pot sizes to suit your preference and needs.",
+        "Shipping: Our Echinocereus Cacti are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition."
+      ],
+      "description": "Ladyfinger cactus (*Echinocereus pentalophus*) is also known as Alice, Devil's Fingers, and Dog Tail. It needs bright sunlight, light fertilizer, and is prone to root rot. The root system is shallow and weak. Aphids and mealybugs are also a danger. Avoiding wet soil can help with success with a ladyfinger cactus.",
+      "imgUrl": "./assets/plant-slide.png"
+    },
+    {
+      "id": 2,
+      "name": "Monstera Deliciosa",
+      "subtitle": "Enhance Your Indoor Greenery with the Majestic Monstera",
+      "label": ["indoor", "outdoor", "monstera"],
+      "price": "$159.99",
+      "isInSale": false,
+      "discountPercentage": 0,
+      "features": [
+        "Species: Monstera deliciosa.",
+        "Mature Size: Varies by species, typically ranging from 4 to 12 feet (1.2-3.6 meters) in height.",
+        "Blooming Season: Does not typically bloom when grown indoors.",
+        "Pot Size: Available in various pot sizes to suit your preference and needs.",
+        "Shipping: Our Monstera deliciosa plants are carefully packaged and shipped with the utmost care to ensure they arrive in excellent condition."
+      ],
+      "description": "Monstera deliciosa is a popular indoor plant. It thrives in bright indirect sunlight and requires moderate watering. Its large leaves have unique perforations, giving it a distinctive appearance. It does not typically produce flowers when grown indoors.",
+      "imgUrl": "../assets/plant-slide-2.png"
+    },
+    {
+      "id": 3,
+      "name": "Orchidae",
+      "subtitle": "Add Elegance to Your Space with Exquisite Orchids",
+      "label": ["indoor", "outdoor", "orchid", "high-quality"],
+      "price": "$109.99",
+      "isInSale": true,
+      "discountPercentage": 25,
+      "features": [
+        "Species: Orchidaceae.",
+        "Mature Size: Varies by species, typically ranging from a few inches to several feet in height.",
+        "Blooming Season: Varies depending on the orchid species, with some blooming once a year and others blooming multiple times.",
+        "Pot Size: Available in various pot sizes to accommodate different orchid species and growth stages.",
+        "Shipping: Our orchids are carefully packaged and shipped to ensure they arrive in excellent condition."
+      ],
+      "description": "Orchids, from the Orchidaceae family, are elegant and diverse plants. They showcase stunning flowers and intricate designs. They can be grown indoors or outdoors, requiring specific care based on their species. Orchids bring sophistication and beauty with their enchanting blooms, adding a touch of elegance to any space.",
+      "imgUrl": "../assets/plant-slide-3.png"
+    },
+    {
+      "id": 4,
+      "name": "Sansevieria trifasciata",
+      "subtitle": "Bring Natural Beauty and Air Purification with the Stunning Snake PLant",
+      "label": ["indoor", "ornamental", "low-maintenance"],
+      "price": "$49.99",
+      "isInSale": true,
+      "discountPercentage": 10,
+      "features": [
+        "Species: Sansevieria trifasciata.",
+        "Mature Size: Varies by variety, typically ranging from 1 to 3 feet (30-90 cm) in height.",
+        "Blooming Season: Occasionally produces small, fragrant white flowers.",
+        "Pot Size: Available in various pot sizes to suit your preference and needs.",
+        "Shipping: Our Espada-de-São-Jorge plants are carefully packaged and shipped to ensure they arrive in excellent condition."
+      ],
+      "description": "Sansevieria trifasciata, also called Snake Plant or Espada-de-São-Jorge, is a beautiful and low-maintenance ornamental plant. Its upright leaves with variegated patterns add elegance to indoor spaces. Known for its air-purifying abilities, this plant improves air quality by filtering toxins. It requires minimal watering and can tolerate various light conditions. Occasionally, it produces small, fragrant white flowers, adding charm to its appeal.",
+      "imgUrl": "../assets/plant-slide-4.png"
+    }
+  ]
+}
