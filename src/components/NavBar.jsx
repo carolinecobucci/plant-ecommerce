@@ -1,7 +1,8 @@
 
 import styles from "./NavBar.module.css";
 
-import logo from '../assets/logo-icon.svg'
+import logo from '../assets/logo-icon.svg';
+import {UserButton} from "@clerk/clerk-react"
 
 const NavBar = () => {
     return (
@@ -14,8 +15,7 @@ const NavBar = () => {
         <li className={styles.item}><a>About Us</a></li>
       </ul>
       <div className={styles.login}>
-        {/* Aqui entra a parte do clerk*/}
-        <p>Login</p>
+       < UserButton />
       </div>
     </nav>
  );
