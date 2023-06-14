@@ -1,30 +1,55 @@
+body {
+    background-color: #F0F1EE;  
+}
+
+
 .container {
 
     /* position: absolute; */
     display: flex;
     flex-direction: column;
-    /* align-items: normal; */
-    /* background-color: #F0F1EE; */
-    background-color: burlywood;
-    max-width: 60%;
+    align-items: normal;
+    background-color: #F0F1EE;
+    /* background-color: burlywood; */
+    width: 100%;
     height: 60vh;
     margin-top: 10%;
     padding: 2%;
+    gap: 1rem;
 
 }
+
+.containerlove {
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.border{
+        
+    width: 32px;
+    height: 3px;
+    
+    /* Dark/IBBNB */
+
+    background: #1E1E24;
+}
+
 
 .love {
 
     display: flex;
     width: 40%;
-    height: 3px;
-    left: 0px;
-    top: 13px;
-    margin-top: 1rem;
-    /* Dark/IBBNB */
+    
+    
 
-    background: #1E1E24;
-
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
     font-family: "Pacifico";
 
 }
@@ -33,12 +58,13 @@
 
 
     display: flex;
-    flex-direction: row;
-    justify-content: end;
-    padding: 5%;
-    gap: 1rem;
-    width: 40%;
-    height: 40rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0%;
+    gap: 1em;
+    width: 50%;
+    height: 10rem;
     
 
     /* Primary/Primary */
@@ -57,12 +83,7 @@
     color: #354733;
 
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-
+   
 }
 
 .span {
@@ -74,8 +95,8 @@
 
 .description {
 
-    width: 611px;
-    height: 97px;
+    width: 30%;
+    height: 8rem;
 
     /* secondary/Secondary */
 
@@ -103,21 +124,26 @@
 
 }
 
-.item, .description{
+button {
+    font-family: "Raleway";
+    font-weight: 400;
+    width: 10rem;
+    height: 3rem;
+    background: #354733;
+    border: none;
+    gap: 10rem;
+  }
+
+/* .item, .description{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0px;
-    gap: 12px;
+    padding: 0%;
+    gap: 0vh;
 
-    width: 611px;
-    height: 253px;
+    width: 50%;
+    height: 10rem;
 
 
-    /* Inside auto layout */
-
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-}
+} */
