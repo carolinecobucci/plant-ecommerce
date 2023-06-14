@@ -5,16 +5,16 @@ import logo from "../assets/logo-icon.svg";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <div className={styles.div1}>
-        <div className={styles.div2}>
+      <div className={styles.blockContact}>
+        <div className={styles.contact}>
           <h2>Stay Fresh</h2>
-          <p>Compassinhos@gmail.com</p>
+          <p>compassinhos@gmail.com</p>
           <p>+55 41 99999-9999</p>
         </div>
         <nav className={styles.links}>
-          <div className={styles.div3}>
+          <div className={styles.linksBlock}>
             <ul className={styles.list}>
-              <li className={styles.item1}>Links</li>
+              <li className={styles.itemLinks}>Links</li>
             </ul>
             <ul className={styles.list}>
               <li className={styles.item}>
@@ -28,9 +28,9 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div className={styles.div4}>
+          <div className={styles.linksCommunity}>
             <ul className={styles.list}>
-              <li className={styles.item2}>Community</li>
+              <li className={styles.itemCommunity}>Community</li>
             </ul>
             <ul className={styles.list}>
               <li className={styles.item}>
@@ -47,11 +47,11 @@ const Footer = () => {
         </nav>
       </div>
 
-      <hr/>
+      <hr className={styles.hr}/>
 
-      <div className={styles.div5}>
-        <img src={logo}></img>
-        <p>Compassinhos &reg; All Rights Reserved</p>
+      <div className={styles.logoReserved}>
+        <img className={styles.imgLogo} src={logo}></img>
+        <p>Compassinhos  &reg;.  All Rights reserved</p>
       </div>
     </footer>
   );
