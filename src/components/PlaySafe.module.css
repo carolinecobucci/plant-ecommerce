@@ -1,0 +1,18 @@
+.container{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: #C0C1BF */
+    background-image: url(../assets/main-plant.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    filter: grayscale(100%);
+    background-color: #F0F1EE;
+    display: flex;
+    flex-direction: column;
+}
+
+.leftFoto{
+    position: absolute;
+    bottom: -250px;
+    background-color: red;
+}
