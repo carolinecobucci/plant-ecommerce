@@ -1,13 +1,12 @@
-import "./App.css";
-import PlantRegistrationSection from "./components/PlantRegistrationSection";
+import './App.css';
 
 function App() {
+  
   return (
     <div>
-     
       
     </div>
   );
-}
+
 
 export default App;
