@@ -2,7 +2,7 @@
     color: #fff;
     padding:1em;
     background-image: url('../assets/footer-pattern.svg');
-    background-color:  #354733;
+    background-color:#354733;
     mix-blend-mode: multiply;
     flex-wrap: wrap;
     width: 85%;
@@ -105,6 +105,5 @@
     margin-left: 1em;
     margin-right: 1.5em;
     margin-top: 3em;
-    color:chartreuse;
 }
 
