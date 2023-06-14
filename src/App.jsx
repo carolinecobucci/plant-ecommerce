@@ -1,3 +1,4 @@
+import Intropage from './components/Intropage';
 import "./App.css";
 
 function App() {
