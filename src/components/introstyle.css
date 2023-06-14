@@ -1,23 +1,31 @@
-body {
-    background-color: #F0F1EE;  
-}
-
-
 .container {
-
-    /* position: absolute; */
     display: flex;
     flex-direction: column;
     align-items: normal;
-    background-color: #F0F1EE;
-    /* background-color: burlywood; */
-    width: 100%;
-    height: 60vh;
+    /* background-color: #F0F1EE; */
+    width: 100vw;
+    height: 100vh;
     margin-top: 10%;
     padding: 2%;
     gap: 1rem;
-
-}
+    position: relative;
+  }
+  
+  .container::after {
+    content: "";
+    background-image: url(../assets/main-plant.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-color: #F0F1EE;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: grayscale(100%);
+    z-index: -1;
+  }
+  
 
 .containerlove {
 
@@ -41,7 +49,7 @@ body {
 .love {
 
     display: flex;
-    width: 40%;
+    width: 10rem;
     
     
 
@@ -62,23 +70,16 @@ body {
     justify-content: center;
     align-items: flex-start;
     padding: 0%;
-    gap: 1em;
-    width: 50%;
+    gap: 0.5rem;
+    width: 30rem;
     height: 10rem;
     
-
-    /* Primary/Primary */
-
-    font-family: 'EB Garamond';
+    /* font-family: 'EB Garamond'; */
     font-style: normal;
     font-weight: 700;
-    font-size: 4rem;
-    line-height: 8vh;
-    display: flex;
-    align-items: center;
-    text-transform: capitalize;
+    font-size: 2rem;
+    line-height: 84px;
 
-    /* Primary/Lunar green */
 
     color: #354733;
 
@@ -95,15 +96,16 @@ body {
 
 .description {
 
-    width: 30%;
-    height: 8rem;
+    width: 37rem;
+    height: 4rem;
+    gap: 2rem;
 
     /* secondary/Secondary */
 
     font-family: 'Raleway';
     font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-weight: 500;
+    font-size: 0.95rem;
     line-height: 154.5%;
     /* or 25px */
 
@@ -134,16 +136,3 @@ button {
     gap: 10rem;
   }
 
-/* .item, .description{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 0%;
-    gap: 0vh;
-
-    width: 50%;
-    height: 10rem;
-
-
-} */

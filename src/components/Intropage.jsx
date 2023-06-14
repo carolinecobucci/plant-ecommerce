@@ -21,12 +21,23 @@ function Intropage () {
                         <p className="description">We are your one-stop destination for all things green and growing. Our website 
                         offers a wide array of stunning plants, ranging from vibrant flowers to lush indoor 
                         foliage, allowing you to create your very own green oasis. </p>
+                        
+                    </div> 
 
+                    <div>
                         <button>
                             <a href="#">Shop now</a>
                         </button>
-                    </div>                    
+                    </div>                   
+                
+                    {/* Section for images */}
+                    {/* <div className="photo1">
+                        <img src="/src/assets/main-plant.png" alt="plant photo" />
+                    </div> */}
+                
                 </section>
+
+                
                 
             
             </body> 
