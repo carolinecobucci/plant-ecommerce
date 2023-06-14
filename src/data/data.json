@@ -4,7 +4,10 @@
       "id": 1,
       "name": "Echinocereus Cactus",
       "subtitle": "A Majestic Addition to Your Plant Collection",
-      "label": ["indoor", "cactus"],
+      "label": [
+        "indoor",
+        "cactus"
+      ],
       "price": "$139.99",
       "isInSale": true,
       "discountPercentage": 20,
@@ -16,7 +19,11 @@
       "id": 2,
       "name": "Monstera Deliciosa",
       "subtitle": "Enhance Your Indoor Greenery with the Majestic Monstera",
-      "label": ["indoor", "outdoor", "monstera"],
+      "label": [
+        "indoor",
+        "outdoor",
+        "monstera"
+      ],
       "price": "$159.99",
       "isInSale": false,
       "discountPercentage": 0,
@@ -28,7 +35,12 @@
       "id": 3,
       "name": "Orchidae",
       "subtitle": "Add Elegance to Your Space with Exquisite Orchids",
-      "label": ["indoor", "outdoor", "orchid", "high-quality"],
+      "label": [
+        "indoor",
+        "outdoor",
+        "orchid",
+        "high-quality"
+      ],
       "price": "$109.99",
       "isInSale": true,
       "discountPercentage": 25,
@@ -40,7 +52,11 @@
       "id": 4,
       "name": "Sansevieria trifasciata",
       "subtitle": "Bring Natural Beauty and Air Purification with the Stunning Snake PLant",
-      "label": ["indoor", "ornamental", "low-maintenance"],
+      "label": [
+        "indoor",
+        "ornamental",
+        "low-maintenance"
+      ],
       "price": "$49.99",
       "isInSale": true,
       "discountPercentage": 10,
@@ -48,5 +64,6 @@
       "description": "Sansevieria trifasciata, commonly known as Espada-de-São-Jorge or Snake Plant, is a stunning ornamental plant that brings both natural beauty and air purification qualities to any indoor space. With its upright, sword-shaped leaves showcasing variegated patterns, this plant adds an elegant touch to your home or office decor. Espada-de-São-Jorge is a low-maintenance plant, tolerant of different light conditions and requiring minimal watering. It is also known for its air-purifying abilities, helping to improve the air quality by filtering out toxins. Occasionally, it produces small, fragrant white flowers, adding an extra touch of charm to its overall appeal.",
       "imgUrl": "./assets/plant-slide.png"
     }
+    
   ]
 }

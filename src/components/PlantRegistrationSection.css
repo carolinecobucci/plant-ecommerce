@@ -73,13 +73,9 @@ body{
     gap: 8px;
     align-items: center;
   }
-  input[type="radio"]:checked{
-    
-    background-color: #00ff9d; /* Altere a cor desejada aqui */
-    
-  }
+  
   .input-container {
-    color: #141413;
+    
     border: 1.5px solid #AFB2AA;
     border-radius: 4px;
     width: 100%;
@@ -100,8 +96,12 @@ body{
   .input-container-3 {
     height: 4rem; 
   }
+  .text-area{
+    resize: none;
+  }
   .labels{
     font-size: 13px;
+    
   }
   
   .button {
@@ -138,8 +138,78 @@ body{
     
   }
   .image-wrapper {
-    width: 100%; /* Largura desejada */
-    margin: 0 auto; /* Centraliza o wrapper horizontalmente */
+    width: 100%;
+    margin: 0 auto; 
   }
-  
+  .success-message{
+    border:none;
+    position: relative;
+    left: 20%;
+    color: #5a6b57;
+
+  }
+  @media screen and (max-width: 1115px) {
+    .imagem{
+      position: fixed;
+      filter: grayscale(100%);
+      max-width: 100%;
+      width: 51%;
+      top: 5%;
+      right: 0%;
+    }
+  }
+
+  @media screen and (max-width: 871px) {
+    h1{
+      font-size: 14px;
+      margin: 0px;
+
+    }
+    .imagem{
+      display: none;
+      width: 57%;
+      
+      
+    }
+    .forms {
+      top:0%;
+      left: 5%;
+      background-color: rgba(0, 0, 0, 0);
+      
+    
+    }
+    .labels {
+      color: #020502;
+      font-size: 12px;
+
+    }
+    .input-container{
+      border: 1.5px solid #AFB2AA;
+      border-radius: 4px;
+      width: 100%;
+      height: 1rem;
+      padding: 6px;
+      margin-top: 5px;
+
+    }
+    .container{
+      background-image: url('../assets/main-plant.png');
+      background-attachment: fixed;
+      background-size: cover;
+      background-position: center;
+      filter: grayscale(100%);
+    }
+    .image-container{
+      
+      display: none;
+      
+    }
+    .image-wrapper {
+      
+      display: none;
+    }
+    
+
+
+  }
   

@@ -1,14 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import "./PlantRegistrationSection.css";
 import img from '../assets/main-plant.png';
 
+
+
 const PlantRegistrationSection = () => {
-  
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    // Obtém os valores dos campos do formulário
+    
     const name = document.getElementById("name").value;
+    const subtittle = document.getElementById("subtittle").value;
     const type = document.getElementById("type").value;
     const price = document.getElementById("price").value;
     const discount = document.getElementById("discount").value;
@@ -16,9 +18,10 @@ const PlantRegistrationSection = () => {
     const features = document.getElementById("features").value;
     const description = document.getElementById("description").value;
 
-    // Cria um objeto com os dados do formulário
+    
     const formData = {
       name,
+      subtittle,
       type,
       price,
       discount,
@@ -26,9 +29,10 @@ const PlantRegistrationSection = () => {
       features,
       description,
     };
+    
 
-    // Realiza a requisição POST para o JSON Server
-    fetch("http://localhost:3000/data", {
+    
+    fetch("http://localhost:3000/plants", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -37,8 +41,8 @@ const PlantRegistrationSection = () => {
     })
       .then((response) => {
         if (response.ok) {
+          setFormSubmitted(true); 
           console.log("Dados enviados com sucesso!");
-          setFormSubmitted(true);
         } else {
           throw new Error("Erro ao enviar os dados.");
         }
@@ -47,11 +51,13 @@ const PlantRegistrationSection = () => {
         console.error("Erro ao enviar os dados:", error);
       });
   };
-  const [formSubmitted, setFormSubmitted] = useState(false);
+
+  const [formSubmitted, setFormSubmitted] = useState(false); 
 
   return (
     <>
       <div className="container">
+      {!formSubmitted ? (
         <div className="forms">
           <h1>Plant Registration</h1>
 
@@ -67,11 +73,11 @@ const PlantRegistrationSection = () => {
               />
             </div>
             <div className="input-wrapper">
-              <label htmlFor="name" className="labels">Plant subtitle</label>
+              <label htmlFor="subtittle" className="labels">Plant subtitle</label>
               <input
                 type="text"
-                name="name"
-                id="name"
+                name="subtittle"
+                id="subtittle"
                 placeholder="A majestic addition to your plant collection"
                 className="input-container"
               />
@@ -124,29 +130,23 @@ const PlantRegistrationSection = () => {
 
             <div className="input-wrapper">
               <label htmlFor="features" className="labels">Features</label>
-              <input
-                type="text"
-                name="features"
-                id="features"
-                className="input-container input-container-3"
-              />
+              <textarea name="features" id="features" cols="30" rows="10" className="input-container input-container-3 text-area" placeholder="Species: Echinocereus..."></textarea>
+              
             </div>
 
             <div className="input-wrapper">
               <label htmlFor="description" className="labels">Description</label>
-              <input
-                type="text"
-                name="description"
-                id="description"
-                className="input-container input-container-3"
-              />
-            </div>
+              <textarea name="description" id="description" cols="30" rows="10" className="input-container input-container-3 text-area" placeholder="Ladyfinger cactus..."></textarea>
+              </div>
 
             <button type="submit" className="button" onClick={handleSubmit}>
               Register
             </button>
           </form>
         </div>
+        ) : (
+          <h1 className="success-message">Form submitted successfully!</h1>
+        )}
         <div className="image-container">
           <div className="image-wrapper">
             <img src={img} alt="planta" className="imagem" />
@@ -154,9 +154,7 @@ const PlantRegistrationSection = () => {
         </div>
 
       </div>
-      {formSubmitted && (
-      <p className="success-message">Dados enviados com sucesso!</p>
-    )}
+      
     </>
   );
 };
