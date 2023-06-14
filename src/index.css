@@ -1,17 +1,7 @@
-<<<<<<< HEAD
-* {
-  margin: 0;
-  padding: 0;
-}
 
-img {
-  max-width: 100%;
-  display: block;
-}
-=======
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
->>>>>>> 463d1ed9dd54eb4d358c79100a79e6d7d75f6d45
+
