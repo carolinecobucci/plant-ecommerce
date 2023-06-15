@@ -1,0 +1,145 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: normal;
+
+  width: 100vw;
+  height: 100vh;
+  margin-top: 10%;
+  padding: 2%;
+  gap: 1rem;
+  position: relative;
+}
+
+.container::after {
+  content: "";
+  background-image: url(../assets/main-plant.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-color: #f0f1ee;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.container::before {
+  content: "";
+  background-image: url(../assets/left-plant.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  width: 50%;
+  height: 80%;
+  position: absolute;
+  bottom: -13rem;
+  left: 0rem;
+  filter: grayscale(100%);
+}
+
+.containerlove {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.border {
+  width: 32px;
+  height: 3px;
+  margin-left: 2rem;
+  background: #1e1e24;
+}
+
+.love {
+  display: flex;
+  width: 10rem;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  font-family: "Pacifico";
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0%;
+  gap: 0.5rem;
+  width: 30rem;
+  height: 10rem;
+  margin-left: 2rem;
+
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 84px;
+
+  color: #354733;
+}
+
+.span {
+  color: #8a9b6e;
+}
+
+.description {
+  width: 37rem;
+  height: 4rem;
+  gap: 2rem;
+  margin-left: 2rem;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.95rem;
+  line-height: 154.5%;
+
+  display: flex;
+  align-items: center;
+
+  color: #808276;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+button {
+  font-family: "Raleway";
+  font-weight: 400;
+  width: 10rem;
+  height: 3rem;
+  background: #354733;
+  border: none;
+  gap: 10rem;
+  margin-left: 2rem;
+}
+
+button a {
+  text-decoration: none;
+  color: #fcfcfc;
+}
+
+.learn {
+  width: 124px;
+  height: 25px;
+
+  position: absolute;
+  bottom: 100px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 154.5%;
+  margin-left: 2rem;
+
+  color: #808276;
+}
