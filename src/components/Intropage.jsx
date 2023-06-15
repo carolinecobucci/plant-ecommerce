@@ -29,6 +29,10 @@ function Intropage () {
                             <a href="#">Shop now</a>
                         </button>
 
+                    <div className="learn">
+                        <h6>Learn Gardening <img src="/src/assets/Arrow 1.png" alt="arrow" /></h6>
+                    </div>
+
                     </div>
                                   
                 </section>

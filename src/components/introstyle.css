@@ -162,3 +162,23 @@ button{
     color: #fcfcfc;
  }
 
+.learn{
+    width: 124px;
+    height: 25px;
+
+    position: absolute;
+    bottom: 100px;
+
+    /* secondary/Secondary */
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 154.5%;
+    margin-left: 2rem;
+   
+    color: #808276;
+
+}
+
