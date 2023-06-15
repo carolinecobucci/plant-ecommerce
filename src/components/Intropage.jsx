@@ -28,13 +28,9 @@ function Intropage () {
                         <button>
                             <a href="#">Shop now</a>
                         </button>
-                    </div>                   
-                
-                    {/* Section for images */}
-                    {/* <div className="photo1">
-                        <img src="/src/assets/main-plant.png" alt="plant photo" />
-                    </div> */}
-                
+
+                    </div>
+                                  
                 </section>
 
                 
