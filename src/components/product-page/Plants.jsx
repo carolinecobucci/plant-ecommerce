@@ -1,4 +1,4 @@
-import './Plants.css';
+import styles from './Plants.module.css';
 
 const Product = ({ data, loading }) => {
   return (
@@ -6,26 +6,34 @@ const Product = ({ data, loading }) => {
       {loading ? (
         <p>Loading...</p>
       ) : (
-        <div className="product-container">
-          <img src="/src/assets/Photo.svg" alt="" />
+        <div className={styles.productContainer}>
+          <img src="/src/assets/Photo.svg" alt="Um pequeno cacto em um vaso" />
 
-          <div className="content-container">
-            <h1 className="title">{data.name}</h1>
-            <h2 className="main-subtitle">{data.subtitle}</h2>
-            <ul className="labels-container">
+          <div className={styles.contentContainer}>
+            <h1 className={styles.title}>{data.name}</h1>
+            <h2 className={styles.mainSubtitle}>{data.subtitle}</h2>
+            <ul className={styles.labelsContainer}>
               {data.label &&
                 data.label.map((label) => (
-                  <li className="label" key={label.index}>
+                  <li className={styles.label} key={label.index}>
                     {label}
                   </li>
                 ))}
             </ul>
-            <p className="price">{data.price}</p>
-            <button className="check-button">Check out</button>
-            <h3 className="subtitles">Features</h3>
-            <ul className="features">{data.features}</ul>
-            <h3 className="subtitles">Description</h3>
-            <p className="text-description">{data.description}</p>
+            <p className={styles.price}>{data.price}</p>
+            <button className={styles.checkButton}>Check out</button>
+            <h3 className={styles.subtitles}>Features</h3>
+            <ul className={styles.features}>
+              {' '}
+              {data.features &&
+                data.features.map((feature) => (
+                  <li className={styles.label} key={feature.index}>
+                    {feature}
+                  </li>
+                ))}
+            </ul>
+            <h3 className={styles.subtitles}>Description</h3>
+            <p className={styles.textDescription}>{data.description}</p>
           </div>
         </div>
       )}
