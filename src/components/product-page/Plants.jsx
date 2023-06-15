@@ -1,6 +1,10 @@
 import styles from './Plants.module.css';
 
 const Product = ({ data, loading }) => {
+  const discountPercentage = 1 - data.discountPercentage / 100;
+  const price = data.price.substring(1, 6);
+  const salePrice = (+price * discountPercentage).toFixed(2);
+
   return (
     <>
       {loading ? (
@@ -20,14 +24,20 @@ const Product = ({ data, loading }) => {
                   </li>
                 ))}
             </ul>
-            <p className={styles.price}>{data.price}</p>
+            {data.isInSale ? (
+              <div className={styles.priceContent}>
+                <p className={styles.price}>${salePrice}</p>
+                <p className={styles.riskPrice}>{data.price}</p>
+              </div>
+            ) : (
+              <p className={styles.price}>{data.price}</p>
+            )}
             <button className={styles.checkButton}>Check out</button>
             <h3 className={styles.subtitles}>Features</h3>
             <ul className={styles.features}>
-              {' '}
               {data.features &&
                 data.features.map((feature) => (
-                  <li className={styles.label} key={feature.index}>
+                  <li className={styles.feature} key={feature.index}>
                     {feature}
                   </li>
                 ))}

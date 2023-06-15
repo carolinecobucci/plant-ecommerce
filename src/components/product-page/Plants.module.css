@@ -32,6 +32,10 @@ body {
   gap: 20px;
   max-height: 750px;
 }
+.priceContent {
+  display: flex;
+  gap: 20px;
+}
 
 .title {
   font: 64px/.75 'EB Garamond', serif;
@@ -60,6 +64,12 @@ body {
 
 .price, .subtitles {
   font: 24px/1 'Lato', sans-serif;
+}
+
+.riskPrice {
+  font: 24px/1 'Lato', sans-serif;
+text-decoration: line-through;
+color: #AFB2AA;
 }
 
 .checkButton {
