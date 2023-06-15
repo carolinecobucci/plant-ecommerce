@@ -3,6 +3,7 @@ import App from './App.jsx';
 import './index.css';
 import NavBar from './components/NavBar.jsx';
 import Footer from './components/Footer.jsx';
+import PlantRegistrationSection from './components/PlantRegistrationSection.jsx';
 import {
   ClerkProvider,
   SignedIn,
@@ -10,9 +11,15 @@ import {
   RedirectToSignIn,
 } from '@clerk/clerk-react';
 
-const clerkPK = import.meta.env.VITE_REACT_APP_CLERK_PUBLISHABLE_KEY;
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+const clerkPK = 'pk_test_cHJlc2VudC1nYXRvci01MC5jbGVyay5hY2NvdW50cy5kZXYk';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  <Router>
+    <Routes>
+      <Route path='/' element={
+        <>
   <ClerkProvider publishableKey={clerkPK}>
     <SignedIn>
       <NavBar />
@@ -23,4 +30,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <RedirectToSignIn />
     </SignedOut>
   </ClerkProvider>,
+        </>
+      }/>
+      <Route path='register' element={<PlantRegistrationSection/>}/>
+    </Routes>
+  </Router>
 );
