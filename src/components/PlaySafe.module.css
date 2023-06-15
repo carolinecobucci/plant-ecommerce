@@ -1,7 +1,8 @@
 .container{
-    width: 100vw;
+    margin: auto;
+    width: 80vw;
     height: 100vh;
-    /* background-color: #C0C1BF */
+    background-color: #C0C1BF;
     background-image: url(../assets/main-plant.png);
     background-repeat: no-repeat;
     background-position: right;
@@ -12,7 +13,7 @@
 }
 
 .leftFoto{
-    position: absolute;
+    /* position: absolute; */
     bottom: -250px;
-    background-color: red;
+    /* background-color: red; */
 }

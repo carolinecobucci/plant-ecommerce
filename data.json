@@ -15,9 +15,6 @@
   ],
   "profile": {
     "name": "typicode"
-<<<<<<< HEAD
-  }
-=======
   },
   "plants": [
     {
@@ -85,5 +82,4 @@
       "imgUrl": "../assets/plant-slide-4.png"
     }
   ]
->>>>>>> 5776fc023f38f37ca1c547e08ab9c7488c323cf5
 }

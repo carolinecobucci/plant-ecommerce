@@ -1,6 +1,6 @@
 import { Fragment, useEffect, useState } from "react";
 import classes from './PlantCard.module.css';
-import foto from '../assets/plant-slide.png'
+import foto from '../../assets/plant-slide.png'
 
 const PlantCard = () => {
     const [details, setDetails] = useState([])

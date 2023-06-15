@@ -10,7 +10,7 @@ import {
   RedirectToSignIn,
 } from '@clerk/clerk-react';
 
-const clerkPK = import.meta.env.VITE_REACT_APP_CLERK_PUBLISHABLE_KEY;
+const clerkPK = 'pk_test_cHJlc2VudC1nYXRvci01MC5jbGVyay5hY2NvdW50cy5kZXYk';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <ClerkProvider publishableKey={clerkPK}>
