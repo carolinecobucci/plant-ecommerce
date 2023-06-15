@@ -18,14 +18,14 @@ body {
   box-sizing: border-box;
 }
 
-.product-container {
+.productContainer {
   display: flex;
   max-width: 1440px; 
   margin: 0 auto;
   gap: 80px;
 }
 
-.content-container {
+.contentContainer {
   display: flex;
   flex-direction: column;
   align-content: space-between;
@@ -38,11 +38,11 @@ body {
   color:#354733;
 }
 
-.main-subtitle {
+.mainSubtitle {
   font: 24px/1 'Raleway', sans-serif;
   color: #AFB2AA;
 }
-.labels-container {
+.labelsContainer {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -62,7 +62,7 @@ body {
   font: 24px/1 'Lato', sans-serif;
 }
 
-.check-button {
+.checkButton {
   font: 16px/1 'Raleway', sans-serif;
   background:#354733 ;
   color: #fff;
@@ -72,11 +72,11 @@ body {
   cursor: pointer;
 }
 
-.check-button:hover {
+.checkButton:hover {
   background:#304030 ;
 }
 
-.features, .text-description {
+.features, .textDescription {
   font: 400 16px/1.5 'Raleway', sans-serif ;
 }
 
@@ -91,6 +91,6 @@ body {
   display: block;
 }
 
-.text-description {
+.textDescription {
   max-width: 68ch;
 }
