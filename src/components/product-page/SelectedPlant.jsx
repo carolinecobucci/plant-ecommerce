@@ -7,9 +7,9 @@ const SelectedPlant = () => {
   React.useEffect(() => {
     setId(1);
   }, []);
-  const { data, error, loading } = useFetch(id);
+  const { data, error } = useFetch(id);
 
-  return <>{loading ? <p>Loading...</p> : !error && <Plants data={data} />}</>;
+  return <>{!error && <Plants data={data} />}</>;
 };
 
 export default SelectedPlant;
