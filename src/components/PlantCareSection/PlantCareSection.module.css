@@ -1,3 +1,6 @@
+.background {
+  background: #fcfcfc;
+}
 .section_container {
   width: 85%;
   margin: 0 auto;
@@ -98,7 +101,7 @@ h3 {
   font-size: 0.8rem;
 }
 
-button {
+.see_more_photos button {
   font-family: "Raleway";
   font-weight: 400;
   width: 10rem;
@@ -107,7 +110,7 @@ button {
   border: none;
 }
 
-button a {
+.see_more_photos button a {
   text-decoration: none;
   color: #fcfcfc;
 }
