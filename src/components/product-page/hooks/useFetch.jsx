@@ -1,7 +1,7 @@
 import React from 'react';
 
 function useFetch(id) {
-  const [data, setData] = React.useState([]);
+  const [data, setData] = React.useState();
   const [error, setError] = React.useState('');
   const [loading, setLoading] = React.useState(false);
 
@@ -22,7 +22,7 @@ function useFetch(id) {
     fetchData();
   }, [id]);
 
-  return { data, error };
+  return { data, error, loading};
 }
 
 export default useFetch;

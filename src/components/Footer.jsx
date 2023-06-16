@@ -1,5 +1,5 @@
 import styles from "./Footer.module.css";
-
+import {Link} from "react-router-dom";
 import logo from "../assets/logo-icon.svg";
 
 const Footer = () => {
@@ -18,13 +18,13 @@ const Footer = () => {
             </ul>
             <ul className={styles.list}>
               <li className={styles.item}>
-                <a href="#">About Us</a>
+              <Link to ='/aboutUs'>About Us</Link>
               </li>
               <li className={styles.item}>
-                <a href="#">Products</a>
+                <Link to="#">Products</Link>
               </li>
               <li className={styles.item}>
-                <a href="#">Blogs</a>
+                <Link to="#">Blogs</Link>
               </li>
             </ul>
           </div>
@@ -34,13 +34,13 @@ const Footer = () => {
             </ul>
             <ul className={styles.list}>
               <li className={styles.item}>
-                <a href="#">About Us</a>
+              <Link to ='/aboutUs'>About Us</Link>
               </li>
               <li className={styles.item}>
-                <a href="#">Products</a>
+              <Link to="#">Products</Link>
               </li>
               <li className={styles.item}>
-                <a href="#">Blogs</a>
+              <Link to="#">Blogs</Link>
               </li>
             </ul>
           </div>
