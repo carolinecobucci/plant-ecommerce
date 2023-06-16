@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import styles from "./PlantRegistrationSection.module.css";
-import img from '../assets/main-plant.png';
-import NavBar from "./NavBar";
-import Footer from "./Footer";
+
+
 
 const PlantRegistrationSection = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +17,19 @@ const PlantRegistrationSection = () => {
 
   const handleSubmit = (event) => {
   event.preventDefault();
+  if (
+    !formData.name ||
+    !formData.subtittle ||
+    !formData.type ||
+    !formData.price ||
+    !formData.discount ||
+    !formData.label ||
+    !formData.features ||
+    !formData.description
+  ) {
+    setFormError(true);
+    return;
+  }
 
   fetch("http://localhost:3000/plants", {
     method: "POST",
@@ -29,6 +41,7 @@ const PlantRegistrationSection = () => {
     .then((response) => {
       if (response.ok) {
         console.log("Dados enviados com sucesso!");
+        setFormError(false);
         setFormSubmitted(true);
       } else {
         throw new Error("Erro ao enviar os dados.");
@@ -40,6 +53,7 @@ const PlantRegistrationSection = () => {
 };
 
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [formError, setFormError] = useState(false);
 
   const handleChange = (event) => {
     const { name, value } = event.target;
@@ -51,11 +65,11 @@ const PlantRegistrationSection = () => {
 
   return (
     <>
-    
-      <div className={styles.container}>
+      
+      <div className={`${styles.container} ${formSubmitted ? styles.success : ''}`}>
         {!formSubmitted ? (
           <div className={styles.forms}>
-            <h1>Plant Registration</h1>
+            <h1 className={styles.tittle}>Plant Registration</h1>
             <form onSubmit={handleSubmit}>
               <div className={styles["input-wrapper"]}>
                 <label htmlFor="name" className={styles.labels}>
@@ -188,6 +202,7 @@ const PlantRegistrationSection = () => {
                   onChange={handleChange}
                 ></textarea>
               </div>
+              {formError && <p className={styles.error}>Please fill in all fields</p>}
               <button
                 type="submit"
                 className={styles.button}
