@@ -1,5 +1,6 @@
 import styles from "./IntroPage.module.css";
 import rectangle from "../assets/rectangle.svg";
+import { Link } from "react-router-dom";
 
 function IntroPage() {
   return (
@@ -20,7 +21,7 @@ function IntroPage() {
           allowing you to create your very own green oasis.{" "}
         </p>
         <button>
-          <a href="#">Shop now</a>
+          <Link to="/products">Shop now</Link>
         </button>
         <div className={styles.learn}>
           <p>Learn Gardening</p>
