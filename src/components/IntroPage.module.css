@@ -1,7 +1,34 @@
 .container {
-  margin-top: 9rem;
+  position: relative;
+  margin-top: 7rem;
+}
+
+.backgroundImage1 {
+  position: absolute;
+  top: 225px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/left-plant.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  filter: grayscale(100%);
+  z-index: -1;
+}
+
+.backgroundImage2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-image: url(../assets/main-plant.png);
   background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  filter: grayscale(100%);
+  z-index: -1;
 }
 
 .containerlove {
@@ -26,6 +53,8 @@
   color: #354733;
   gap: 1.5rem;
   margin-left: 6rem;
+  position: relative;
+  z-index: 1;
 }
 
 .item h2 {

@@ -4,6 +4,8 @@ import rectangle from "../assets/rectangle.svg";
 function IntroPage() {
   return (
     <div className={styles.container}>
+      <div className={styles.backgroundImage1}></div>
+      <div className={styles.backgroundImage2}></div>
       <div className={styles.item}>
         <div className={styles.containerlove}>
           <img src={rectangle} alt="rectangle" />

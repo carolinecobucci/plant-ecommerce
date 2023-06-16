@@ -2,7 +2,6 @@
   background: #fcfcfc;
 }
 .section_container {
-  width: 85%;
   margin: 0 auto;
   background: #fcfcfc;
 }
@@ -40,14 +39,14 @@ p {
 }
 
 .sub_title {
-  width: 83%;
+  width: 70%;
 }
 
 .plant_needs_container {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 5rem;
+  gap: 6rem;
   margin-bottom: 6rem;
 }
 
@@ -62,7 +61,7 @@ p {
   align-items: center;
   text-align: center;
   gap: 1rem;
-  width: 19rem;
+  width: 21rem;
 }
 
 h3 {
@@ -76,24 +75,24 @@ h3 {
 .plant_photos {
   display: flex;
   flex-direction: row;
-  gap: 1rem;
+  gap: 6rem;
   padding-bottom: 7rem;
   justify-content: center;
 }
 
 .plant_photos img {
-  width: 19rem;
+  width: 21rem;
 }
 
 .plant_photos_container {
-  width: 23rem;
+  width: 21rem;
 }
 
 .see_more_photos {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  width: 19rem;
+  width: 21rem;
 }
 
 .see_more_photos p {
