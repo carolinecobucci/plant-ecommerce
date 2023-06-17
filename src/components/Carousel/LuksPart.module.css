@@ -1,5 +1,5 @@
 .container{
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
     min-height: 100vh;
     display: flex;
@@ -12,7 +12,8 @@
 }
 
 .firstH1 h1{
-    margin-top: 1.5rem;
+    margin-top: 3.5rem;
+    margin-bottom: 4rem;
     color: #354733
 }
 .firstH1 span{
@@ -20,7 +21,8 @@
 }
 
 .secondH1 h1{
-    margin-top: 7rem;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
     color: #8A9B6E
 }
 .secondH1 span{

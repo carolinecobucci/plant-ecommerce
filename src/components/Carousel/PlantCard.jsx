@@ -1,10 +1,14 @@
 import { Fragment, useEffect, useState } from "react";
 import classes from './PlantCard.module.css';
-import foto from '../../assets/plant-slide.png';
-import { Link } from 'react-router-dom';
+import foto1 from '../../assets/plant-slide.png';
+import foto2 from '../../assets/plant-slide-2.png';
+import foto3 from '../../assets/plant-slide-3.png';
+import foto4 from '../../assets/plant-slide-4.png';
 
 const PlantCard = (props) => {
     const [details, setDetails] = useState([]);
+
+    const pictures = [foto1, foto2, foto3, foto4]
 
     useEffect(() => {
         fetch('http://localhost:3000/plants')
@@ -18,7 +22,7 @@ const PlantCard = (props) => {
             <div className={classes.container}>
             {details.length > 0 ? (
                 <Fragment>
-                    <img src={foto} alt="Imagem da planta" />
+                    <img src={pictures[props.num]} alt="Imagem da planta" />
                     {details[props.num] && (
                     <Fragment>
                         <p className={classes.name}>{details[props.num].name}</p>
