@@ -5,7 +5,7 @@ import classes from './PlantCarousel.module.css';
 
 import PlantCard from './PlantCard';
 
-const plantCard = [0, 1, 2, 3]
+const plantCard = [0, 1, 2, 3,1,1,1,1,1,1,1,]
 
 const PlantCarousel = () => {
     const carousel = useRef();
@@ -35,3 +35,5 @@ const PlantCarousel = () => {
         </Fragment>
     )
 };
+
+export default PlantCarousel;
