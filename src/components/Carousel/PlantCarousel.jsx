@@ -1,15 +1,11 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Fragment } from 'react';
-import classes from './PlantCarousel.module.css'
+import classes from './PlantCarousel.module.css';
 
-import plantSlide1 from '../../assets/plant-slide.png';
-import plantSlide2 from '../../assets/plant-slide-2.png';
-import plantSlide3 from '../../assets/plant-slide-3.png';
-import plantSlide4 from '../../assets/plant-slide-4.png';
 import PlantCard from './PlantCard';
 
-const plantImages = [plantSlide1, plantSlide2, plantSlide3, plantSlide4]
+const plantCard = [0, 1, 2, 3]
 
 const PlantCarousel = () => {
     const carousel = useRef();
@@ -29,9 +25,9 @@ const PlantCarousel = () => {
                     animate={{x: 0}}
                     transition={{duration: 0.8}}
                     >
-                    {plantImages.map(plantImg => (
-                        <motion.div className={classes.item} key={plantImg}>
-                            <PlantCard/>
+                    {plantCard.map(plantImgs => (
+                        <motion.div className={classes.item} key={plantImgs}>
+                            <PlantCard num={plantImgs}/>
                         </motion.div>
                     ))}
                 </motion.div>
@@ -39,5 +35,3 @@ const PlantCarousel = () => {
         </Fragment>
     )
 };
-
-export default PlantCarousel;
