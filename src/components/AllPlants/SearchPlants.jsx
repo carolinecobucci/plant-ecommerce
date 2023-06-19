@@ -1,5 +1,5 @@
 import React from 'react';
-import useFetch from '../product-page/hooks/useFetch';
+import useFetch from '../ProductPage/hooks/useFetch';
 
 const SearchPlants = ({ handleSearch }) => {
   const [filteredPlants, setFilteredPlants] = React.useState();

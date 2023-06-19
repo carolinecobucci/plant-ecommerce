@@ -1,5 +1,5 @@
 import styles from './PlantCard.module.css';
-import photo from './src/assets/plant-slide-2.png';
+import photo from '/src/assets/plant-slide.png';
 
 const PlantCard = ({ name, price }) => {
   return (
@@ -10,7 +10,7 @@ const PlantCard = ({ name, price }) => {
             <img src={photo} alt="Imagem da planta" />
             <div className={styles.dataContainer}>
               <p className={styles.name}>{name}</p>
-              <p className={styles.price}>{price}</p>
+              <p className={styles.price}>${price}</p>
             </div>
           </>
         }

@@ -1,5 +1,5 @@
 import React from 'react';
-import useFetch from '../product-page/hooks/useFetch';
+import useFetch from '../ProductPage/hooks/useFetch';
 import styles from './AllPlants.module.css';
 import PlantCard from './PlantCard';
 import SearchPlants from './SearchPlants';
