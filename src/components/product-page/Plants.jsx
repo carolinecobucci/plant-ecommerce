@@ -1,4 +1,4 @@
-import styles from './Plants.module.css';
+import styles from "./Plants.module.css";
 
 const Plants = ({
   salePrice,
@@ -24,8 +24,8 @@ const Plants = ({
             <h2 className={styles.mainSubtitle}>{plantSubtitle}</h2>
             <ul className={styles.labelsContainer}>
               {plantLabel &&
-                plantLabel.map((label) => (
-                  <li className={styles.label} key={label.index}>
+                plantLabel.map((label, index) => (
+                  <li className={styles.label} key={index}>
                     {label}
                   </li>
                 ))}
@@ -33,21 +33,21 @@ const Plants = ({
             {plantInSale ? (
               <div className={styles.priceContent}>
                 <p className={styles.price}>${salePrice}</p>
-                <p className={styles.riskPrice}>${price}</p>
+                <p className={styles.riskPrice}>{price}</p>
               </div>
             ) : (
-              <p className={styles.price}>${price}</p>
+              <p className={styles.price}>{price}</p>
             )}
+            {console.log(plantFeatures)}
+
             <button className={styles.checkButton}>Check out</button>
             <h3 className={styles.subtitles}>Features</h3>
             <ul className={styles.features}>
-              {plantFeatures &&
-                plantFeatures.map((feature) => (
-                  <li className={styles.feature} key={feature.index}>
-                    {feature}
-                  </li>
-                ))}
+              {plantFeatures && (
+                <li className={styles.feature}>{plantFeatures}</li>
+              )}
             </ul>
+
             <h3 className={styles.subtitles}>Description</h3>
             <p className={styles.textDescription}>{plantDescription}</p>
           </div>

@@ -1,5 +1,7 @@
-import { Fragment, useEffect, useState } from "react";
-import classes from './PlantCard.module.css';
+import { Fragment, useEffect, useState } from "react"
+import classes from './PlantCard.module.css'
+import { useNavigate } from "react-router-dom";
+
 import foto1 from '../../assets/plant-slide.png';
 import foto2 from '../../assets/plant-slide-2.png';
 import foto3 from '../../assets/plant-slide-3.png';
@@ -17,9 +19,16 @@ const PlantCard = (props) => {
             setDetails(res);
         })
     },[])
+    
+    const navigate = useNavigate();
+
+    const ClickHandler =() =>{
+        navigate("/products/" + details[0].id);   
+    };
     return (
         <Fragment>
-            <div className={classes.container}>
+
+            <div onClick={ClickHandler} className={classes.container}>
             {details.length > 0 ? (
                 <Fragment>
                     <img src={pictures[props.num]} alt="Imagem da planta" />
@@ -34,6 +43,7 @@ const PlantCard = (props) => {
             ) : (
                 <p>Loading...</p>
             )}
+            
             </div>
         </Fragment>
     )

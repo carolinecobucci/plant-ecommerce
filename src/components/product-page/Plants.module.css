@@ -12,7 +12,7 @@ img {
 body {
   display: flex;
   background: #F0F1EE;
-  height: 100vh;
+  /* height: 100vh; */
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
