@@ -5,14 +5,7 @@ import IntroPage from "./components/IntroPage";
 import AboutUsPage from "./components/AboutUsPage/AboutUsPage";
 
 function App() {
-  return (
-    <div>
-      <AboutUsPage />
-      {/*<IntroPage />
-      <PlantCareSection />
-      <LuksPart />*/}
-    </div>
-  );
+  return <div></div>;
 }
 
 export default App;
