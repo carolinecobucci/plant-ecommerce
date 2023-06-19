@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  display: flex;
+  background: #F0F1EE;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.title {
+  font: 64px/.75 'EB Garamond', serif;
+  color:#354733;
+  padding: 50px 0;
+  text-align: center;
+}
+input[type=search] {
+  border: 1px solid #AFB2AA;
+  border-radius: 4px;
+  width: 85%;
+  height: 35px;
+  margin-bottom: 50px;
+}
+
+input[type=search]:focus {
+  outline: none;
+  font: 16px/.75 'Inter', sans-serif;
+  color: #354733;
+  padding: 10px;
+}
+
+input[type=search]::placeholder {
+  font: 16px/.75 'Inter', sans-serif;
+  color: #AFB2AA;
+  padding: 10px;
+  text-align: center;
+}
+
+.slidesContainer {
+  max-width: 900px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items:flex-start ;
+  align-items: center;
+  align-content: center;
+  gap: 16px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+p  {
+  text-decoration: none;
+  font: 400 18px/1 'Raleway', sans-serif ;
+}
