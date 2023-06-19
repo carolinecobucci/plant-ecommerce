@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@clerk/clerk-react": "^4.20.1",
+    "@clerk/clerk-react": "^4.20.4",
     "framer-motion": "^10.12.16",
     "json-serve": "^0.1.0",
     "json-server": "^0.17.3",

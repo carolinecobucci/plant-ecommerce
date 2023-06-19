@@ -1,6 +1,6 @@
-import styles from "./Footer.module.css";
-import {Link} from "react-router-dom";
-import logo from "../assets/logo-icon.svg";
+import styles from './Footer.module.css';
+import { Link } from 'react-router-dom';
+import logo from '../assets/logo-icon.svg';
 
 const Footer = () => {
   return (
@@ -18,10 +18,10 @@ const Footer = () => {
             </ul>
             <ul className={styles.list}>
               <li className={styles.item}>
-              <Link to ='/aboutUs'>About Us</Link>
+                <Link to="/aboutUs">About Us</Link>
               </li>
               <li className={styles.item}>
-                <Link to="#">Products</Link>
+                <Link to="/products">Products</Link>
               </li>
               <li className={styles.item}>
                 <Link to="#">Blogs</Link>
@@ -34,24 +34,24 @@ const Footer = () => {
             </ul>
             <ul className={styles.list}>
               <li className={styles.item}>
-              <Link to ='/aboutUs'>About Us</Link>
+                <Link to="/aboutUs">About Us</Link>
               </li>
               <li className={styles.item}>
-              <Link to="#">Products</Link>
+                <Link to="/products">Products</Link>
               </li>
               <li className={styles.item}>
-              <Link to="#">Blogs</Link>
+                <Link to="#">Blogs</Link>
               </li>
             </ul>
           </div>
         </nav>
       </div>
 
-      <hr className={styles.hr}/>
+      <hr className={styles.hr} />
 
       <div className={styles.logoReserved}>
         <img className={styles.imgLogo} src={logo}></img>
-        <p>Compassinhos  &reg;.  All Rights reserved</p>
+        <p>Compassinhos &reg;. All Rights reserved</p>
       </div>
     </footer>
   );
