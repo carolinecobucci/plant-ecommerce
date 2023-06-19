@@ -3,10 +3,11 @@ import useFetch from './hooks/useFetch';
 import { useParams } from 'react-router-dom';
 
 const SelectedPlant = () => {
+
   const {id} = useParams();
-  // const [id, setId] = React.useState();
   console.log(id);
   const { data, error, loading } = useFetch(id);
+
 
   return (
     <>
@@ -16,7 +17,9 @@ const SelectedPlant = () => {
           price={data.price.substring(1, data.price.length)}
           salePrice={(
             +data.price.substring(1, data.price.length) *
+
             data.discountPercentage
+
           ).toFixed(2)}
           loading={loading}
           plantName={data.name}

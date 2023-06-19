@@ -10,19 +10,17 @@ function useFetch(id) {
       setLoading(true);
       try {
         const response = await fetch(`http://localhost:3000/plants/${id}`);
-        if (!response.ok) throw new Error('Erro ao fazer a requisição');
         const json = await response.json();
         setData(json);
       } catch (error) {
         setError('Houve um erro ao solicitar os dados');
       }
-
       setLoading(false);
     };
     fetchData();
   }, [id]);
 
-  return { data, error, loading};
+return { data, error, loading};
 }
 
 export default useFetch;
