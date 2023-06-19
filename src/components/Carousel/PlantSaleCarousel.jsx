@@ -1,39 +1,47 @@
-import { useState, useRef, useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { Fragment } from 'react';
-import classes from './PlantCarousel.module.css';
+import { Fragment, useEffect, useState } from "react"
+import classes from './PlantCard.module.css'
+import { Link } from "react-router-dom";
 
-import PlantCard from './PlantCard';
+import foto1 from '../../assets/plant-slide.png';
+import foto2 from '../../assets/plant-slide-2.png';
+import foto3 from '../../assets/plant-slide-3.png';
+import foto4 from '../../assets/plant-slide-4.png';
 
-const plantCard = [0, 1, 2, 3]
+const PlantCard = (props) => {
+    const [details, setDetails] = useState([]);
 
-const PlantSaleCarousel = () => {
-    const carousel = useRef();
-    const [width, setWidth] = useState(0);
+    const pictures = [foto1, foto2, foto3, foto4]
 
-    useEffect(()=>{
-        setWidth(carousel.current?.scrollWidth - carousel.current?.offsetWidth)
+    useEffect(() => {
+        fetch('http://localhost:3000/plants')
+        .then(res => res.json())
+        .then(res => {
+            setDetails(res);
+        })
     },[])
 
     return (
         <Fragment>
-            <motion.div ref={carousel} className={classes.carousel} whileTap={{cursor: 'grabbing'}}>
-                <motion.div className={classes.inner}
-                    drag="x"
-                    dragConstraints={{ right: 0, left: -width}}
-                    initial={{x: 100}}
-                    animate={{x: 0}}
-                    transition={{duration: 0.8}}
-                    >
-                    {plantCard.map(plantImgs => (
-                        <motion.div className={classes.item} key={plantImgs}>
-                            <PlantCard num={plantImgs}/>
-                        </motion.div>
-                    ))}
-                </motion.div>
-            </motion.div>
+
+            <div className={classes.container}>
+            {details.length > 0 ? (
+                <Fragment>
+                    <img src={pictures[props.num]} alt="Imagem da planta" />
+                    {details[props.num] && (
+                    <Fragment>
+                        <Link className={classes.link} to={`/products/${details[props.num].id}`}><p className={classes.name}>{details[props.num].name}</p></Link>
+                        <p className={classes.price}>{details[props.num].price}</p>
+                        <p className={classes.label}>{details[props.num].label[0]}</p>
+                    </Fragment>
+                    )}
+                </Fragment>
+            ) : (
+                <p>Loading...</p>
+            )}
+            
+            </div>
         </Fragment>
     )
 };
 
-export default PlantSaleCarousel;
+export default PlantCard;

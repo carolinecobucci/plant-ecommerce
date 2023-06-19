@@ -26,7 +26,7 @@ const PlantCarousel = () => {
                     transition={{duration: 0.8}}
                     >
                     {plantCard.map(plantImgs => (
-                        <motion.div className={classes.item} key={plantImgs}>
+                        <motion.div className={classes.item} key={Math.random(plantImgs)}>
                             <PlantCard num={plantImgs}/>
                         </motion.div>
                     ))}
