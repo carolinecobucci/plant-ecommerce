@@ -1,5 +1,5 @@
 import styles from './PlantCard.module.css';
-import photo from './plant-slide.png';
+import photo from './src/assets/plant-slide-2.png';
 
 const PlantCard = ({ name, price }) => {
   return (
