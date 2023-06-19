@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 6px rgba(41, 41, 41, 0.3);
+  font-family: Lato;
+  color: #354633;
+}
+
+.dataContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  /* height: 120px; */
+  /* width: 70%; */
+}
+
+.name{
+  max-width: 15rem;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: left;
+}
+
+.price{
+  max-width: 15rem;
+  font-size: 1.15rem;
+  font-family: Raleway;
+  text-align: left;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  /* width: 70%; */
+}
+
