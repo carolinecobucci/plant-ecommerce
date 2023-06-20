@@ -64,6 +64,7 @@ const PlantRegistrationSection = () => {
   return (
     <>
       <div className={`${styles.container} ${formSubmitted ? styles.containerSuccess : ""}`}>
+        <div className={styles.backgroundImage}></div>
         {!formSubmitted ? (
           <div className={styles.forms}>
             <h1 className={styles.tittle}>Plant Registration</h1>
@@ -199,7 +200,7 @@ const PlantRegistrationSection = () => {
                   onChange={handleChange}
                 ></textarea>
               </div>
-              {formError && <p className={styles.error}>Please fill in all fields</p>}
+              {formError && <p className={styles.error}>Please fill in all fields.</p>}
               <button type="submit" className={styles.button} onClick={handleSubmit}>
                 Register
               </button>
