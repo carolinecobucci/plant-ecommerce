@@ -10,7 +10,7 @@ const PlantCard = ({ name, price }) => {
             <img src={photo} alt="Imagem da planta" />
             <div className={styles.dataContainer}>
               <p className={styles.name}>{name}</p>
-              <p className={styles.price}>${price}</p>
+              <p className={styles.price}>{price}</p>
             </div>
           </>
         }

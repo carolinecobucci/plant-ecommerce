@@ -20,7 +20,7 @@
 .price{
     color: #354633;
     max-width: 15rem;
-    margin: 0.2rem 0 0 2rem;
+    margin: 0.5rem 0 0 2rem;
     font-size: 1rem;
     font-family: Raleway;
     text-align: left;
@@ -44,4 +44,16 @@
 .link{
     text-decoration: none;
     color: inherit;
+}
+
+.pricesSale{
+    display: flex;
+    align-items: center;
+    margin-top: 0.5rem;
+    gap: 1rem;
+    /* background-color: red; */
+}
+
+.priceDiscarded{
+    text-decoration: line-through;
 }

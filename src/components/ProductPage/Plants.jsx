@@ -33,7 +33,7 @@ const Plants = ({
             {plantInSale ? (
               <div className={styles.priceContent}>
                 <p className={styles.price}>${salePrice}</p>
-                <p className={styles.riskPrice}>{price}</p>
+                <p className={styles.riskPrice}>${price}</p>
               </div>
             ) : (
               <p className={styles.price}>{price}</p>

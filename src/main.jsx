@@ -11,10 +11,10 @@ import {
 } from '@clerk/clerk-react';
 import { BrowserRouter } from 'react-router-dom';
 
-const clerkPK = import.meta.env.VITE_REACT_APP_CLERK_PUBLISHABLE_KEY;
+const clerkPK = 'pk_test_ZGFzaGluZy1yYXR0bGVyLTY1LmNsZXJrLmFjY291bnRzLmRldiQ';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <ClerkProvider publishableKey="pk_test_cHJlc2VudC1nYXRvci01MC5jbGVyay5hY2NvdW50cy5kZXYk">
+  <ClerkProvider publishableKey={clerkPK}>
     <BrowserRouter>
       <SignedIn>
         <NavBar />

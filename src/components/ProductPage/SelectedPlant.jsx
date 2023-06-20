@@ -13,7 +13,7 @@ const SelectedPlant = () => {
       {!error && data && (
         <Plants
           price={+data.price}
-          salePrice={(+data.price * data.discountPercentage).toFixed(2)}
+          salePrice={(+data.price * 1 - +data.discountPercentage).toFixed(2)}
           loading={loading}
           plantName={data.name}
           plantSubtitle={data.subtitle}
