@@ -47,7 +47,7 @@ const Footer = () => {
         </nav>
       </div>
 
-      <hr className={styles.hr} />
+      <div className={styles.divider}></div>
 
       <div className={styles.logoReserved}>
         <img className={styles.imgLogo} src={logo2}></img>

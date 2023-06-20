@@ -57,7 +57,7 @@
   justify-content: space-between;
   margin-top: 2em;
   margin: 0 auto;
-  margin-top: 1.2rem;
+  margin-top: 1.5rem;
   width: 85%;
   padding-bottom: 0.2rem;
 }
@@ -69,6 +69,7 @@
   width: 15em;
   text-align: center;
   color: #ffffff;
+  line-height: 154.5%;
 }
 
 .imgLogo {
