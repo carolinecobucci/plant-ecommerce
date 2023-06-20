@@ -17,11 +17,9 @@ const LuksPart = () => {
           </h1>
         </div>
         <PlantCarousel />
-        <div className={classes.secondH1}>
-          <h1>
-            Plants In <span>Sale</span>
-          </h1>
-        </div>
+        <h1 className={classes.secondH1}>
+          Plants In <span>Sale</span>
+        </h1>
         <PlantSaleCarousel className={classes.PlantSaleCarousel} />
       </div>
     </Fragment>
