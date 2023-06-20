@@ -40,7 +40,7 @@ const Plants = ({
                 <p className={styles.riskPrice}>${price}</p>
               </div>
             ) : (
-              <p className={styles.price}>{price}</p>
+              <p className={styles.price}>${price}</p>
             )}
             {console.log(plantFeatures)}
 
