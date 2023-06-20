@@ -1,5 +1,5 @@
-img {
-  max-width: 100%;
+.img {
+  max-width: 40%;
   display: block;
 }
 
@@ -12,9 +12,12 @@ img {
 
 .productContainer {
   display: flex;
-  max-width: 1440px;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  gap: 80px;
+  gap: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
 }
 
 .contentContainer {
@@ -36,7 +39,10 @@ img {
 }
 
 .mainSubtitle {
-  font: 24px/1 "Raleway", sans-serif;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
   color: #afb2aa;
 }
 .labelsContainer {
@@ -45,7 +51,8 @@ img {
   gap: 15px;
 }
 .label {
-  font: 16px/1 "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
   color: #158212;
   padding: 7px 13px;
   border-radius: 20px;
@@ -55,22 +62,40 @@ img {
   list-style-type: none;
 }
 
-.price,
-.subtitles {
-  font: 24px/1 "Lato", sans-serif;
+.price {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  color: #000000;
 }
 
 .riskPrice {
-  font: 24px/1 "Lato", sans-serif;
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 29px;
   text-decoration: line-through;
   color: #afb2aa;
 }
 
+.subtitles {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
 .checkButton {
-  font: 16px/1 "Raleway", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-size: 0.8rem;
   background: #354733;
   color: #fff;
-  padding: 18px 58px;
+  padding: 14px 41px;
   border: none;
   max-width: fit-content;
   cursor: pointer;
@@ -88,6 +113,8 @@ img {
 .features {
   list-style-type: disc;
   padding-left: 20px;
+  font-size: 0.8rem;
+  width: 33rem;
 }
 
 .features li::marker {
@@ -98,4 +125,8 @@ img {
 
 .textDescription {
   max-width: 68ch;
+  font-size: 0.8rem;
+  color: #000000;
+  text-align: left;
+  width: 33rem;
 }
