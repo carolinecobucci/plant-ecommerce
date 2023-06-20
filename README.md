@@ -4,9 +4,9 @@
 
 This is the second challenge of the Frontend Development - React scholarship program offered by Compass Uol in partnership with AWS Cloud Context.
 
-## Demo
+## Preview
 
-Vídeo do projeto
+![Logo](/src/assets/read-me-img.png)
 
 ## Features
 
