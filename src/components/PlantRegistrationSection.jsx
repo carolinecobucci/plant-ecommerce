@@ -63,12 +63,12 @@ const PlantRegistrationSection = () => {
 
   return (
     <>
-      <div className={`${styles.container} ${formSubmitted ? styles.success : ""}`}>
+      <div className={`${styles.container} ${formSubmitted ? styles.containerSuccess : ""}`}>
         {!formSubmitted ? (
           <div className={styles.forms}>
             <h1 className={styles.tittle}>Plant Registration</h1>
             <form onSubmit={handleSubmit}>
-              <div className={styles["input-wrapper"]}>
+              <div className={styles.inputWrapper}>
                 <label htmlFor="name" className={styles.labels}>
                   Plant name
                 </label>
@@ -77,12 +77,12 @@ const PlantRegistrationSection = () => {
                   name="name"
                   id="name"
                   placeholder="Echinocereus Cactus"
-                  className={styles["input-container"]}
+                  className={styles.inputContainer}
                   value={formData.name}
                   onChange={handleChange}
                 />
               </div>
-              <div className={styles["input-wrapper"]}>
+              <div className={styles.inputWrapper}>
                 <label htmlFor="subtittle" className={styles.labels}>
                   Plant subtitle
                 </label>
@@ -91,12 +91,12 @@ const PlantRegistrationSection = () => {
                   name="subtittle"
                   id="subtittle"
                   placeholder="A majestic addition to your plant collection"
-                  className={styles["input-container"]}
+                  className={styles.inputContainer}
                   value={formData.subtittle}
                   onChange={handleChange}
                 />
               </div>
-              <div className={styles["input-wrapper"]}>
+              <div className={styles.inputWrapper}>
                 <label htmlFor="type" className={styles.labels}>
                   Plant type
                 </label>
@@ -105,13 +105,13 @@ const PlantRegistrationSection = () => {
                   name="type"
                   id="type"
                   placeholder="Cactus"
-                  className={styles["input-container"]}
+                  className={styles.inputContainer}
                   value={formData.type}
                   onChange={handleChange}
                 />
               </div>
-              <div className={styles["input-row"]}>
-                <div className={styles["input-wrapper"]}>
+              <div className={styles.inputRow}>
+                <div className={styles.inputWrapper}>
                   <label htmlFor="price" className={styles.labels}>
                     Price
                   </label>
@@ -120,12 +120,12 @@ const PlantRegistrationSection = () => {
                     name="price"
                     id="price"
                     placeholder="$139.99"
-                    className={`${styles["input-container"]} ${styles["input-container-1"]}`}
+                    className={`${styles.inputContainer} ${styles.inputContainer1}`}
                     value={formData.price}
                     onChange={handleChange}
                   />
                 </div>
-                <div className={styles["input-wrapper"]}>
+                <div className={styles.inputWrapper}>
                   <label htmlFor="discount" className={styles.labels}>
                     Discount percentage
                   </label>
@@ -134,17 +134,17 @@ const PlantRegistrationSection = () => {
                     name="discount"
                     id="discount"
                     placeholder="20%"
-                    className={`${styles["input-container"]} ${styles["input-container-1"]}`}
+                    className={`${styles.inputContainer} ${styles.inputContainer1}`}
                     value={formData.discount}
                     onChange={handleChange}
                   />
                 </div>
               </div>
-              <div className={styles["radio-wrapper"]}>
+              <div className={styles.radioWrapper}>
                 <label htmlFor="label" className={styles.labels}>
                   Label:
                 </label>
-                <div className={styles["radio-inputs"]}>
+                <div className={styles.radioInputs}>
                   <input
                     type="radio"
                     name="label"
@@ -169,7 +169,7 @@ const PlantRegistrationSection = () => {
                   </label>
                 </div>
               </div>
-              <div className={styles["input-wrapper"]}>
+              <div className={styles.inputWrapper}>
                 <label htmlFor="features" className={styles.labels}>
                   Features
                 </label>
@@ -178,13 +178,13 @@ const PlantRegistrationSection = () => {
                   id="features"
                   cols="30"
                   rows="10"
-                  className={`${styles["input-container"]} ${styles["input-container-3"]} ${styles["text-area"]}`}
+                  className={`${styles.inputContainer} ${styles.inputContainer3} ${styles.textArea}`}
                   placeholder="Species: Echinocereus..."
                   value={formData.features}
                   onChange={handleChange}
                 ></textarea>
               </div>
-              <div className={styles["input-wrapper"]}>
+              <div className={styles.inputWrapper}>
                 <label htmlFor="description" className={styles.labels}>
                   Description
                 </label>
@@ -193,7 +193,7 @@ const PlantRegistrationSection = () => {
                   id="description"
                   cols="30"
                   rows="10"
-                  className={`${styles["input-container"]} ${styles["input-container-3"]} ${styles["text-area"]}`}
+                  className={`${styles.inputContainer} ${styles.inputContainer3} ${styles.textArea}`}
                   placeholder="Ladyfinger cactus..."
                   value={formData.description}
                   onChange={handleChange}
@@ -206,11 +206,9 @@ const PlantRegistrationSection = () => {
             </form>
           </div>
         ) : (
-          <h1 className={styles["success-message"]}>Form submitted successfully!</h1>
+          <h1 className={styles.successMessage}>Form submitted successfully!</h1>
         )}
-        <div className={styles["image-container"]}>
-          <div className={styles["image-wrapper"]}></div>
-        </div>
+        <div className={styles.imageContainer}></div>
       </div>
     </>
   );
