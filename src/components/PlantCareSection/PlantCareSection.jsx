@@ -18,7 +18,7 @@ const PlantCareSection = () => {
           <div className={styles.plant_needs}>
             <img src="/src/assets/water-icon.svg" alt="water icon" />
             <h3>Watering</h3>
-            <p>
+            <p className={styles.plant_needs_text}>
               Water your plants when the top inch of soil feels dry to the touch. Avoid
               overwatering, as it can lead to root dehydration.
             </p>
@@ -26,7 +26,7 @@ const PlantCareSection = () => {
           <div className={styles.plant_needs}>
             <img src="/src/assets/sun-icon.svg" alt="sun icon" />
             <h3>Sunlight</h3>
-            <p>
+            <p className={styles.plant_needs_text}>
               Most plants need adequate sunlight to thrive. Place your plants in areas that receive
               the appropriate amount of light for their specific needs
             </p>
@@ -34,7 +34,7 @@ const PlantCareSection = () => {
           <div className={styles.plant_needs}>
             <img src="/src/assets/shop-icon.svg" alt="nutrients and fertilizing icon" />
             <h3>Nutrients and Fertilizing</h3>
-            <p>
+            <p className={styles.plant_needs_text}>
               Choose a suitable fertilizer based on the specific needs of your plants, whether
               it&apos;s a balanced or specialized formula.
             </p>
@@ -49,7 +49,7 @@ const PlantCareSection = () => {
           </div>
           <div className={styles.see_more_photos}>
             <img src="/src/assets/care-plant3.png" alt="plant photo" />
-            <p>
+            <p className={styles.see_more_photos_text}>
               Our website offers a wide array of stunning plants, ranging from vibrant flowers to
               lush indoor foliage, allowing you to create your very own green oasis. In addition to
               our extensive plant selection, we also provide gardening kits and fertilizers to equip

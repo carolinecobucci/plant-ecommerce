@@ -17,7 +17,11 @@ const Plants = ({
         <p>Loading...</p>
       ) : (
         <div className={styles.productContainer}>
-          <img src="/src/assets/Photo.svg" alt="Um pequeno cacto em um vaso" />
+          <img
+            className={styles.img}
+            src="/src/assets/Photo.svg"
+            alt="Um pequeno cacto em um vaso"
+          />
 
           <div className={styles.contentContainer}>
             <h1 className={styles.title}>{plantName}</h1>

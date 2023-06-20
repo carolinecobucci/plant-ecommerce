@@ -15,7 +15,7 @@ function IntroPage() {
         <h2>
           Discover Your <span className={styles.span}>Green</span> Side
         </h2>
-        <p>
+        <p className={styles.mainText}>
           We are your one-stop destination for all things green and growing. Our website offers a
           wide array of stunning plants, ranging from vibrant flowers to lush indoor foliage,
           allowing you to create your very own green oasis.{" "}
@@ -24,7 +24,7 @@ function IntroPage() {
           <Link to="/products">Shop now</Link>
         </button>
         <div className={styles.learn}>
-          <p>Learn Gardening</p>
+          <p className={styles.learnItem}>Learn Gardening</p>
           <img src="/src/assets/arrow.svg" alt="arrow" />
         </div>
       </div>
