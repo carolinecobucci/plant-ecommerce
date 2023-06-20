@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import styles from './PlantRegistrationSection.module.css';
+import { useState } from "react";
+import styles from "./PlantRegistrationSection.module.css";
 
 const PlantRegistrationSection = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    subtittle: '',
-    type: '',
-    price: '',
-    discount: '',
-    label: '',
-    features: '',
-    description: '',
+    name: "",
+    subtittle: "",
+    type: "",
+    price: "",
+    discount: "",
+    label: "",
+    features: "",
+    description: "",
   });
 
   const handleSubmit = (event) => {
@@ -29,24 +29,24 @@ const PlantRegistrationSection = () => {
       return;
     }
 
-    fetch('http://localhost:3000/plants', {
-      method: 'POST',
+    fetch("http://localhost:3000/plants", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     })
       .then((response) => {
         if (response.ok) {
-          console.log('Dados enviados com sucesso!');
+          console.log("Dados enviados com sucesso!");
           setFormError(false);
           setFormSubmitted(true);
         } else {
-          throw new Error('Erro ao enviar os dados.');
+          throw new Error("Erro ao enviar os dados.");
         }
       })
       .catch((error) => {
-        console.error('Erro ao enviar os dados:', error);
+        console.error("Erro ao enviar os dados:", error);
       });
   };
 
@@ -63,14 +63,12 @@ const PlantRegistrationSection = () => {
 
   return (
     <>
-      <div
-        className={`${styles.container} ${formSubmitted ? styles.success : ''}`}
-      >
+      <div className={`${styles.container} ${formSubmitted ? styles.success : ""}`}>
         {!formSubmitted ? (
           <div className={styles.forms}>
             <h1 className={styles.tittle}>Plant Registration</h1>
             <form onSubmit={handleSubmit}>
-              <div className={styles['input-wrapper']}>
+              <div className={styles["input-wrapper"]}>
                 <label htmlFor="name" className={styles.labels}>
                   Plant name
                 </label>
@@ -79,12 +77,12 @@ const PlantRegistrationSection = () => {
                   name="name"
                   id="name"
                   placeholder="Echinocereus Cactus"
-                  className={styles['input-container']}
+                  className={styles["input-container"]}
                   value={formData.name}
                   onChange={handleChange}
                 />
               </div>
-              <div className={styles['input-wrapper']}>
+              <div className={styles["input-wrapper"]}>
                 <label htmlFor="subtittle" className={styles.labels}>
                   Plant subtitle
                 </label>
@@ -93,12 +91,12 @@ const PlantRegistrationSection = () => {
                   name="subtittle"
                   id="subtittle"
                   placeholder="A majestic addition to your plant collection"
-                  className={styles['input-container']}
+                  className={styles["input-container"]}
                   value={formData.subtittle}
                   onChange={handleChange}
                 />
               </div>
-              <div className={styles['input-wrapper']}>
+              <div className={styles["input-wrapper"]}>
                 <label htmlFor="type" className={styles.labels}>
                   Plant type
                 </label>
@@ -107,13 +105,13 @@ const PlantRegistrationSection = () => {
                   name="type"
                   id="type"
                   placeholder="Cactus"
-                  className={styles['input-container']}
+                  className={styles["input-container"]}
                   value={formData.type}
                   onChange={handleChange}
                 />
               </div>
-              <div className={styles['input-row']}>
-                <div className={styles['input-wrapper']}>
+              <div className={styles["input-row"]}>
+                <div className={styles["input-wrapper"]}>
                   <label htmlFor="price" className={styles.labels}>
                     Price
                   </label>
@@ -122,12 +120,12 @@ const PlantRegistrationSection = () => {
                     name="price"
                     id="price"
                     placeholder="$139.99"
-                    className={`${styles['input-container']} ${styles['input-container-1']}`}
+                    className={`${styles["input-container"]} ${styles["input-container-1"]}`}
                     value={formData.price}
                     onChange={handleChange}
                   />
                 </div>
-                <div className={styles['input-wrapper']}>
+                <div className={styles["input-wrapper"]}>
                   <label htmlFor="discount" className={styles.labels}>
                     Discount percentage
                   </label>
@@ -136,23 +134,23 @@ const PlantRegistrationSection = () => {
                     name="discount"
                     id="discount"
                     placeholder="20%"
-                    className={`${styles['input-container']} ${styles['input-container-1']}`}
+                    className={`${styles["input-container"]} ${styles["input-container-1"]}`}
                     value={formData.discount}
                     onChange={handleChange}
                   />
                 </div>
               </div>
-              <div className={styles['radio-wrapper']}>
+              <div className={styles["radio-wrapper"]}>
                 <label htmlFor="label" className={styles.labels}>
                   Label:
                 </label>
-                <div className={styles['radio-inputs']}>
+                <div className={styles["radio-inputs"]}>
                   <input
                     type="radio"
                     name="label"
                     id="indoor"
                     value="indoor"
-                    checked={formData.label === 'indoor'}
+                    checked={formData.label === "indoor"}
                     onChange={handleChange}
                   />
                   <label htmlFor="indoor" className={styles.labels}>
@@ -163,7 +161,7 @@ const PlantRegistrationSection = () => {
                     name="label"
                     id="outdoor"
                     value="outdoor"
-                    checked={formData.label === 'outdoor'}
+                    checked={formData.label === "outdoor"}
                     onChange={handleChange}
                   />
                   <label htmlFor="outdoor" className={styles.labels}>
@@ -171,7 +169,7 @@ const PlantRegistrationSection = () => {
                   </label>
                 </div>
               </div>
-              <div className={styles['input-wrapper']}>
+              <div className={styles["input-wrapper"]}>
                 <label htmlFor="features" className={styles.labels}>
                   Features
                 </label>
@@ -180,13 +178,13 @@ const PlantRegistrationSection = () => {
                   id="features"
                   cols="30"
                   rows="10"
-                  className={`${styles['input-container']} ${styles['input-container-3']} ${styles['text-area']}`}
+                  className={`${styles["input-container"]} ${styles["input-container-3"]} ${styles["text-area"]}`}
                   placeholder="Species: Echinocereus..."
                   value={formData.features}
                   onChange={handleChange}
                 ></textarea>
               </div>
-              <div className={styles['input-wrapper']}>
+              <div className={styles["input-wrapper"]}>
                 <label htmlFor="description" className={styles.labels}>
                   Description
                 </label>
@@ -195,31 +193,23 @@ const PlantRegistrationSection = () => {
                   id="description"
                   cols="30"
                   rows="10"
-                  className={`${styles['input-container']} ${styles['input-container-3']} ${styles['text-area']}`}
+                  className={`${styles["input-container"]} ${styles["input-container-3"]} ${styles["text-area"]}`}
                   placeholder="Ladyfinger cactus..."
                   value={formData.description}
                   onChange={handleChange}
                 ></textarea>
               </div>
-              {formError && (
-                <p className={styles.error}>Please fill in all fields</p>
-              )}
-              <button
-                type="submit"
-                className={styles.button}
-                onClick={handleSubmit}
-              >
+              {formError && <p className={styles.error}>Please fill in all fields</p>}
+              <button type="submit" className={styles.button} onClick={handleSubmit}>
                 Register
               </button>
             </form>
           </div>
         ) : (
-          <h1 className={styles['success-message']}>
-            Form submitted successfully!
-          </h1>
+          <h1 className={styles["success-message"]}>Form submitted successfully!</h1>
         )}
-        <div className={styles['image-container']}>
-          <div className={styles['image-wrapper']}></div>
+        <div className={styles["image-container"]}>
+          <div className={styles["image-wrapper"]}></div>
         </div>
       </div>
     </>
