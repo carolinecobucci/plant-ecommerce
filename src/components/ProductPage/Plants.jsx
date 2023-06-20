@@ -12,7 +12,7 @@ const Plants = ({
   plantInSale,
 }) => {
   return (
-    <>
+    <div className={styles.container}>
       {loading ? (
         <p>Loading...</p>
       ) : (
@@ -43,9 +43,7 @@ const Plants = ({
             <button className={styles.checkButton}>Check out</button>
             <h3 className={styles.subtitles}>Features</h3>
             <ul className={styles.features}>
-              {plantFeatures && (
-                <li className={styles.feature}>{plantFeatures}</li>
-              )}
+              {plantFeatures && <li className={styles.feature}>{plantFeatures}</li>}
             </ul>
 
             <h3 className={styles.subtitles}>Description</h3>
@@ -53,7 +51,7 @@ const Plants = ({
           </div>
         </div>
       )}
-    </>
+    </div>
   );
 };
 

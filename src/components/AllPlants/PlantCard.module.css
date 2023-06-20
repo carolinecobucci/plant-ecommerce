@@ -1,9 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.container{
+.container {
   width: fit-content;
   display: flex;
   flex-direction: column;
@@ -21,14 +16,14 @@
   /* width: 70%; */
 }
 
-.name{
+.name {
   max-width: 15rem;
   font-size: 1.15rem;
   font-weight: 700;
   text-align: left;
 }
 
-.price{
+.price {
   max-width: 15rem;
   font-size: 1.15rem;
   font-family: Raleway;
@@ -40,4 +35,3 @@ img {
   max-width: 100%;
   /* width: 70%; */
 }
-

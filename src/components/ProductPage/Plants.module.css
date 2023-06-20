@@ -1,25 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
-* {
-  margin: 0;
-  padding: 0;
-}
 img {
   max-width: 100%;
   display: block;
 }
-body {
+
+.container {
   display: flex;
-  background: #F0F1EE;
+  background: #f0f1ee;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
 }
 
 .productContainer {
   display: flex;
-  max-width: 1440px; 
+  max-width: 1440px;
   margin: 0 auto;
   gap: 80px;
 }
@@ -37,13 +30,14 @@ body {
 }
 
 .title {
-  font: 64px/.75 'EB Garamond', serif;
-  color:#354733;
+  font-family: "EB Garamond", serif;
+  font-size: 3rem;
+  color: #354733;
 }
 
 .mainSubtitle {
-  font: 24px/1 'Raleway', sans-serif;
-  color: #AFB2AA;
+  font: 24px/1 "Raleway", sans-serif;
+  color: #afb2aa;
 }
 .labelsContainer {
   display: flex;
@@ -51,29 +45,30 @@ body {
   gap: 15px;
 }
 .label {
-  font: 16px/1 'Raleway', sans-serif;
+  font: 16px/1 "Raleway", sans-serif;
   color: #158212;
   padding: 7px 13px;
   border-radius: 20px;
-  border: 2px solid #83E281;
-  background: #F6FFF6;
+  border: 2px solid #83e281;
+  background: #f6fff6;
   max-width: fit-content;
   list-style-type: none;
 }
 
-.price, .subtitles {
-  font: 24px/1 'Lato', sans-serif;
+.price,
+.subtitles {
+  font: 24px/1 "Lato", sans-serif;
 }
 
 .riskPrice {
-  font: 24px/1 'Lato', sans-serif;
-text-decoration: line-through;
-color: #AFB2AA;
+  font: 24px/1 "Lato", sans-serif;
+  text-decoration: line-through;
+  color: #afb2aa;
 }
 
 .checkButton {
-  font: 16px/1 'Raleway', sans-serif;
-  background:#354733 ;
+  font: 16px/1 "Raleway", sans-serif;
+  background: #354733;
   color: #fff;
   padding: 18px 58px;
   border: none;
@@ -82,11 +77,12 @@ color: #AFB2AA;
 }
 
 .checkButton:hover {
-  background:#304030 ;
+  background: #304030;
 }
 
-.features, .textDescription {
-  font: 400 16px/1.5 'Raleway', sans-serif ;
+.features,
+.textDescription {
+  font: 400 16px/1.5 "Raleway", sans-serif;
 }
 
 .features {
@@ -94,7 +90,7 @@ color: #AFB2AA;
   padding-left: 20px;
 }
 
-.features li::marker{
+.features li::marker {
   font-size: 10px;
   align-self: center;
   display: block;

@@ -1,6 +1,6 @@
-import styles from './Footer.module.css';
-import { Link } from 'react-router-dom';
-import logo from '../assets/logo-icon.svg';
+import styles from "./Footer.module.css";
+import { Link } from "react-router-dom";
+import logo2 from "../assets/logo2-icon.svg";
 
 const Footer = () => {
   return (
@@ -50,7 +50,7 @@ const Footer = () => {
       <hr className={styles.hr} />
 
       <div className={styles.logoReserved}>
-        <img className={styles.imgLogo} src={logo}></img>
+        <img className={styles.imgLogo} src={logo2}></img>
         <p>Compassinhos &reg;. All Rights reserved</p>
       </div>
     </footer>
